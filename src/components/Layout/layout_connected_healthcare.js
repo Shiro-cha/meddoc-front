@@ -1,4 +1,4 @@
-import HeaderConnected from '../Header/Header_connected_healthcare.js';
+import HeaderConnected from '../Header/header_connected.js';
 import Footer from '../Footer/footer.js';
 import React from 'react';
 import { Outlet } from "react-router-dom";

@@ -1,7 +1,7 @@
-// import Header from '.../header/Header';
-// import Footer from '../Footer/footer.js';
-// import Whyus from '../LandingPageContent/WhyUS.js';
-// import { lazy } from 'react';
+import Header from '../Header/header.js';
+import Footer from '../Footer/footer.js';
+import Whyus from '../LandingPageContent/WhyUS.js';
+import { lazy } from 'react';
 import React from 'react';
 import { Outlet, Link, useLocation, Route } from "react-router-dom";
 import { SearchBar } from '../sections.js';
