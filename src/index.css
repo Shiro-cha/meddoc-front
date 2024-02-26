@@ -4,6 +4,9 @@
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -14,4 +17,37 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+#root{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-top: auto;
+  flex-shrink: 0 !important;
+}
+.meddoc-blue{
+  background-color: #0096BB;
+  color: white;
+}
+.color-meddoc-blue{
+  color: #0096BB;
+}
+.color-meddoc-dark{
+  color: #082A4D;
+}
+.font-meddoc-normal{
+  font-weight: 400;
+}
+.border-meddoc-blue{
+  border-color: #0096BB;
+}
+.swiper-button-prev, .swiper-button-next{
+  color: #082A4D !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color: #082A4D !important;
 }

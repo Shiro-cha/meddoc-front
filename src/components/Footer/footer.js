@@ -15,14 +15,14 @@ export default function Footer() {
         <>
 
 
-            <footer class="bg-white dark:bg-gray-900">
+            <footer class="bg-white dark:bg-gray-900 footer">
                 <div class="mx-auto w-full p-4 py-6 lg:py-8">
                     <div class="md:flex md:justify-between">
                         <div class="mb-6 md:mb-0">
                             <a href="#" class="flex items-center">
                                 <img src={logo} class="w-1/3 mr-3" alt="Meddoc Logo" />
                             </a>
-                            <p>
+                            <p className="color-meddoc-dark weight-normal font-meddoc-normal">
                                 <br></br>
                                 <strong>Phone: </strong> <a href={`tel:${phone}`}>{phone}</a> <br></br>
                                 <strong>Email: </strong> <a href={`mailto:${email}`}>{email}</a> <br></br>

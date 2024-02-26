@@ -40,20 +40,20 @@ export default function Header() {
     {
       title_text: "Se connecter",
       link: "login",
-      className: "text-white bg-blue-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800"
+      className: "text-white bg-blue-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800 meddoc-blue"
 
     },
     {
       title_text: "Vous êtes practicients?",
       link: "healthcare_sign_up",
-      className: "text-gray border border-blue-600  font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:text-white focus:outline-none",
+      className: "text-gray border border-blue-600  font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:text-white focus:outline-none border-meddoc-blue",
       new_blank:"_blank"
     }
   ]
 
 
   return (
-    <header className='sticky top-0 z-[100]'>
+    <header className='sticky top-0 z-[100] shadow'>
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-4 dark:bg-gray-800 min-h-[68px]">
         <div className="lg:flex justify-between items-center mx-auto ">
 

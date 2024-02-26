@@ -1,0 +1,18 @@
+#hero{
+    background-color:#0096BB ;
+}
+.color-orange{
+    color: #f39530;
+}
+h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px !important;
+    line-height: 1.3333333;
+    color:#fdfdfdfd;
+}
+p{
+    font-style: normal;
+    color:#ffffffe3;
+    font-weight: 700;
+}
