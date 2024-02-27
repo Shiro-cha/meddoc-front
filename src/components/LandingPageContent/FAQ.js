@@ -1,12 +1,15 @@
 import React, { useState } from "react";
-const FAQ1="En savoir plus sur MEDDoC ?";
-const Response1 ="That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-const FAQ2="Qu’est ce que la télémédecine ?";
-const Response2 ="That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-const FAQ3="Comment et où sont stockées nos données?";
-const Response3 ="That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
-const FAQ4="Comment marche le site ?";
-const Response4 ="That includes the in-depth research & creation of your monthly content marketing strategy that we do before writing your first blog post, Ipsum available ."
+const FAQ1 = "En savoir plus sur MEDDoC ?";
+const Response1 = "MEDDoC est une plateforme de santé en ligne qui vise à fournir des informations médicales fiables et des services de télémédecine. Nous nous engageons à vous offrir des conseils de santé personnalisés et des ressources basées sur des données médicales vérifiées.";
+
+const FAQ2 = "Qu’est-ce que la télémédecine ?";
+const Response2 = "La télémédecine est une pratique médicale à distance qui permet aux patients de consulter des professionnels de la santé via des technologies de communication. Avec MEDDoC, vous pouvez bénéficier de consultations en ligne avec des médecins qualifiés, obtenir des diagnostics et des conseils médicaux sans quitter le confort de votre domicile.";
+
+const FAQ3 = "Comment et où sont stockées nos données?";
+const Response3 = "MEDDoC prend la sécurité de vos données très au sérieux. Toutes les données personnelles que vous partagez avec nous sont stockées de manière sécurisée et conformément aux normes de confidentialité en vigueur. Nous utilisons des mesures de sécurité avancées pour protéger vos informations médicales et assurer la confidentialité de vos données.";
+
+const FAQ4 = "Comment marche le site ?";
+const Response4 = "Le site MEDDoC offre une interface conviviale pour accéder à une variété de services de santé en ligne. Vous pouvez vous inscrire, planifier des consultations en ligne, accéder à des ressources médicales, et interagir avec des professionnels de la santé qualifiés. Notre objectif est de simplifier l'accès aux soins de santé et de fournir des informations précieuses pour améliorer votre bien-être.";
 
 
 
@@ -17,14 +20,14 @@ const Accordion = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[520px] text-center lg:mb-20">
-              <span className="mb-2 block text-lg font-semibold text-primary">
+              <span className="mb-2 block text-lg font-semibold text-primary color-meddoc-orange">
                 FAQ
               </span>
-              <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]">
+              <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px] color-meddoc-blue">
               Questions fréquentes
               </h2>
-              <p className="text-base text-body-color">
-                Ces questions blabla.....
+              <p className="text-base text-body-color color-meddoc-dark opacity-50">
+              Découvrez des réponses aux questions couramment posées sur nos produits et services.
               </p>
             </div>
           </div>
@@ -125,7 +128,7 @@ const AccordionItem = ({ header, text }) => {
         </div>
 
         <div className="w-full">
-          <h4 className="text-lg font-semibold text-black dark:text-white dark:bg-gray-800">{header}</h4>
+          <h4 className="text-lg font-semibold text-black dark:text-white dark:bg-gray-800 color-meddoc-dark">{header}</h4>
         </div>
       </button>
 
@@ -134,7 +137,7 @@ const AccordionItem = ({ header, text }) => {
           active ? "block" : "hidden"
         }`}
       >
-        <p className="py-3 text-base leading-relaxed text-body-color">{text}</p>
+        <p className="py-3 leading-relaxed text-body-color text-gray-600 font-medium text-justify">{text}</p>
       </div>
     </div>
   );

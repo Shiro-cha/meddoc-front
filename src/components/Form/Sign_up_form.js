@@ -12,6 +12,9 @@ import ClipLoader from "react-spinners/ClipLoader";
 import AuthContext from "../../security/context/AuthProvider";
 import Swal from "sweetalert2";
 
+//custom style
+import "../../assets/css/login/form.css"
+
 const FORM_URL = '/signup/patient';
 
 function Signup_form() {
@@ -342,26 +345,26 @@ function Signup_form() {
       <div class="flex flex-col items-center justify-center px-40 py-8 mx-auto  lg:py-0">
         <div class="min-w-80  bg-white rounded-lg shadow dark:border  sm:max-w-xl xl:p-0 m-5 dark:bg-gray-800 dark:border-gray-700">
           <div class="p-6 space-y-4 md:space-y-6 sm:p-8 ">
-            <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+            <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white color-meddoc-blue title-meddoc">
               Nouveau sur MeDdoc ?
             </h1>
             <div className="w-full " >
               <ol class="items-center w-full space-y-4 sm:flex sm:space-x-8 sm:space-y-0 flex justify-center">
-                <li className={`flex items-center space-x-2.5 ${currentStep >= 2 ? 'text-blue-500' : 'text-blue-600 dark:text-blue-500'}`}>
-                  <span class={`flex items-center justify-center w-8 h-8 border border-blue-600 rounded-full shrink-0 dark:border-blue-500 ${currentStep >= 2 ? ' bg-blue-600 text-white ' : ''} `}>
+                <li className={`flex items-center space-x-2.5 ${currentStep >= 2 ? 'color-meddoc-dark' : 'text-blue-600 dark:text-blue-500'}`}>
+                  <span class={`flex items-center justify-center w-8 h-8 border border-meddoc-blue color-meddoc-dark rounded-full shrink-0 ${currentStep >= 2 ? 'meddoc-blue  border-blue-500 text-white ' : ''} `}>
                     1
                   </span>
                   <span>
-                    <h3 class="font-medium leading-tight">Profil </h3>
+                    <h3 class="font-medium leading-tight color-meddoc-dark">Profil </h3>
                     <p class="text-xs">Entrer votre profil</p>
                   </span>
                 </li>
-                <li className={`flex items-center space-x-2.5 ${currentStep >= 2 ? 'text-blue-500' : 'text-gray-500 dark:text-blue-500'}`}>
-                  <span class={`flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full shrink-0 dark:border-blue-500 ${currentStep > 2 ? ' bg-blue-600  border-blue-500 text-white ' : ' border-gray-500'} `}>
+                <li className={`flex items-center space-x-2.5 ${currentStep >= 2 ? 'color-meddoc-dark' : 'text-gray-500 dark:text-blue-500'}`}>
+                  <span class={`flex items-center justify-center w-8 h-8 border border-meddoc-blue rounded-full shrink-0 dark:border-blue-500 ${currentStep > 2 ? 'meddoc-blue  border-blue-500 text-white ' : ' border-gray-500'} `}>
                     2
                   </span>
                   <span>
-                    <h3 class="font-medium leading-tight">Compte</h3>
+                    <h3 class="font-medium leading-tigh color-meddoc-darkt">Compte</h3>
                     <p class="text-xs">Votre compte</p>
                   </span>
                 </li>
@@ -370,7 +373,7 @@ function Signup_form() {
                     3
                   </span>
                   <span>
-                    <h3 class="font-medium leading-tight">Confirmation</h3>
+                    <h3 class="font-medium leading-tight color-meddoc-dark">Confirmation</h3>
                     <p class="text-xs">Confrimer votre compte</p>
                   </span>
                 </li>
@@ -381,8 +384,8 @@ function Signup_form() {
             <FormProvider {...methods}>
               <form className="space-y-4 md:space-y-6" onSubmit={e => e.preventDefault()}
                 noValidate
-                autoComplete="off">
-
+                autoComplete="off" id="login-form">
+                
                 {currentStep === 1 && (
                   <>
                     <Input {...name_validation} />

@@ -33,17 +33,38 @@ code {
   background-color: #0096BB;
   color: white;
 }
+.meddoc-dark{
+  background-color: #082A4D;
+  color: white;
+}
+.meddoc-orange{
+  background-color: #f39530;
+  color: white;
+}
 .color-meddoc-blue{
   color: #0096BB;
 }
 .color-meddoc-dark{
   color: #082A4D;
 }
+.color-meddoc-orange{
+  color: #f39530;
+}
 .font-meddoc-normal{
   font-weight: 400;
 }
 .border-meddoc-blue{
   border-color: #0096BB;
+}
+.border-meddoc-orange{
+  background-color: #f395300a !important;
+}
+.border-meddoc-orange:focus{
+  border-color: #082A4D !important;
+}
+.title-meddoc{
+  font-size: 25px !important;
+  text-align: center;
 }
 .swiper-button-prev, .swiper-button-next{
   color: #082A4D !important;

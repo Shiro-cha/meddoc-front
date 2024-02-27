@@ -7,6 +7,8 @@ import Cookies from 'js-cookie';
 import { useUserType } from "../Context/UserTypeContext";
 import jwt_decode from "jwt-decode";
 
+//custom style
+import "../../assets/css/login/form.css"
 
 import axios from "../../api/axios"
 const LOGIN_URL = '/login';
@@ -105,12 +107,12 @@ export default function Login() {
                     <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                         <div class="p-6 space-y-2 md:space-y-6 sm:p-8">
 
-                            <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                                Se connecter à votre compte :
+                            <h1 class="text-md font-bold leading-tight tracking-tight text-gray-900  dark:text-white color-meddoc-blue title-meddoc">
+                                Se connecter à votre compte
                             </h1>
                             <p ref={errRef} className={errMsg ? "errmsg text-red-400 border border-red-300 block w-full p-2.5 rounded ring-red-300" : "offscreen"} aria-live="assertive">{errMsg}</p>
 
-                            <form class="space-y-4 md:space-y-6" onSubmit={handleSubmit} >
+                            <form class="space-y-4 md:space-y-6" onSubmit={handleSubmit} id="login-form">
                                 <div>
                                     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email </label>
 
