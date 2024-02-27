@@ -67,7 +67,7 @@ export default function NosService() {
             </svg>
           </button>
           <h3 className="text-lg font-semibold color-meddoc-dark mb-2">{modalContent.title}</h3>
-          <p className="text-md text-gray-700 font-medium">{modalContent.description}</p>
+          <p className="text-md text-gray-700 font-medium text-justify">{modalContent.description}</p>
         </div>
       </div>
     )}
