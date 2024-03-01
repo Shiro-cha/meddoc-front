@@ -7,6 +7,10 @@ import Searchhealthcare from "./SearchHealthcare";
 import Errormessage from "../Toast/Toast";
 // const READ_ALL_DOCTOR_URL = "/healthpro/read"
 
+//import custom css here
+import "../../assets/css/user/user_hero.css"
+import "../../assets/css/home/search-bar.css"
+
 
 const GET_LOCALISATIONS_URL = "healthpro/_search"
 
@@ -66,7 +70,6 @@ export default function UserHero(styles) {
 
         const formData = new FormData(e.target);
 
-        console.log(formData.get("search"))
 
         setSearchQuery(formData.get("search"));
         setSearchQueryWhere(formData.get("searchWhere"));
@@ -83,15 +86,15 @@ export default function UserHero(styles) {
             <section class="bg-white dark:bg-gray-900 p-4 sm:ml-64">
                 <div class="py-8 px-4 mx-auto  text-center lg:py-10 lg:px-12 flex flex-col justify-center">
 
-                    <h1 class="mb-4 text-2xl font-extrabold tracking-tight leading-none text-[#2d7d86] md:text-2xl lg:text-4xl dark:text-white">BIENVENUE SUR MEDDOC</h1>
+                    <h1 class="mb-4 text-2xl font-extrabold tracking-tight leading-none text-[#2d7d86] md:text-2xl lg:text-4xl dark:text-white color-meddoc-blue">BIENVENUE SUR MEDDOC</h1>
                     <div className=" mx-auto my-5">
-                        <form className="relative flex flex-col space-between" onSubmit={handleSearch}>
-                            <div class="flex divide-x-[3px] min-w-full">
+                        <form className="relative flex flex-col space-between " onSubmit={handleSearch}>
+                            <div class="flex divide-x-[3px] min-w-full ">
                                 <div class="relative w-full lg:w-[400px]">
                                     <input type="search" id="search" name="search"
 
                                         className="lg:w-[400px] block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-l-lg
-                                        border-r-gray-50 border-l-2 border border-gray-300 focus:ring-blue-500
+                                        border-r-gray-10 border-l-2 border border-gray-300 focus:ring-blue-500
                                         focus:border-blue-500 dark:bg-gray-700 dark:border-l-gray-700  dark:border-gray-600
                                         dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Medecin,Infirmier,Specialiste..."
                                     >
@@ -128,11 +131,13 @@ export default function UserHero(styles) {
                                     <button type="submit" class="absolute top-0 right-0 p-2.5
                                         text-sm font-medium h-full text-white bg-[#2d7d86] rounded-r-lg 
                                         border border-[#06aec2] hover:bg-cyan-800 focus:ring-4 focus:outline-none
-                                        focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                        focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 meddoc-orange"
+                                        
                                     >
-                                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                        {/* <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                                        </svg>
+                                        </svg> */}
+                                        Rechercher
                                     </button>
 
                                 </div>
