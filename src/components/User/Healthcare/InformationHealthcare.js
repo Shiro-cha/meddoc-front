@@ -179,8 +179,8 @@ export function SummaryHealthcare({ healthcare_profil }) {
     return (
         <div class="mt-5 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#" className="flex">
-                <svg xmlns="http://www.w3.org/2000/svg" className="mr-2" width="28" height="28" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" d="M3.5 0v5m8-5v5M3 7.5h3m6 0H9m-6 3h3m3 0h3m-10.5-8h12a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-12a1 1 0 0 1-1-1v-10a1 1 0 0 1 1-1Z" /></svg>
-                <h5 class="mb-2 text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Horaire</h5>
+                <svg xmlns="http://www.w3.org/2000/svg" className="mr-2 color-meddoc-orange" width="28" height="28" viewBox="0 0 15 15"><path fill="none" stroke="currentColor" d="M3.5 0v5m8-5v5M3 7.5h3m6 0H9m-6 3h3m3 0h3m-10.5-8h12a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-12a1 1 0 0 1-1-1v-10a1 1 0 0 1 1-1Z" /></svg>
+                <h5 class="mb-2 text-xl font-semibold tracking-tight color-meddoc-dark">Horaire</h5>
             </a>
 
             {/* Calendrier implementation */}

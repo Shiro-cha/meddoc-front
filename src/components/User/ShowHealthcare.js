@@ -76,9 +76,10 @@ export default function ShowHealthcare() {
             <div className="flex flex-col bg-slate-200 sm:ml-64">
                 <div className="flex w-full justify-start bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
                     {/* Your image section */}
+                    <img src={healthcare_profil?.image ? healthcare_profil?.image : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"} alt="Photo de profil" className="w-36 h-36 object-cover rounded-full border border-gray-200 shadow dark:border-gray-700" />
                     {/* ... */}
                     <div className="flex flex-col items-start justify-start my-auto p-10">
-                        <h1 className="text-2xl font-medium color-meddoc-blue title-meddoc">
+                        <h1 className="text-2xl font-bold color-meddoc-blue title-meddoc cursor-pointer ">
                             {healthcare_profil.name} {healthcare_profil.firstname}
                         </h1>
                         <span className="text-xl text-gray-500 dark:text-gray-400">
@@ -87,9 +88,9 @@ export default function ShowHealthcare() {
                         <span className="text-sm text-gray-500 dark:text-gray-400">
                             {healthcare_profil?.contact}
                         </span>
-                        <span className="text-md text-gray-500 dark:text-gray-400">
+                        <a href={`mailto:${healthcare_profil?.email}`} className="text-md text-gray-500 dark:text-gray-400 hover:underline">
                             {healthcare_profil?.email}
-                        </span>
+                        </a>
                     </div>
                 </div>
 
@@ -101,7 +102,7 @@ export default function ShowHealthcare() {
                                     href={`#${section.id}`}
                                     onClick={() => handleScroll(section.id)}
                                     className={`inline-block p-4 border-b-2 ${activeSection === section.id
-                                        ? "text-blue-600 border-b-2 border-blue-600 active dark:text-blue-500 dark:border-blue-500"
+                                        ? "text-blue-600  active meddoc-blue"
                                         : "border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
                                     }`}
                                 >
