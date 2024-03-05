@@ -75,7 +75,7 @@ export default function ShowHealthcare() {
         <>
             <div className="flex flex-col bg-slate-200 sm:ml-64">
                 <div className="flex w-full justify-start bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                    {/* Your image section */}
+                    
                     <img src={healthcare_profil?.image ? healthcare_profil?.image : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"} alt="Photo de profil" className="w-36 h-36 object-cover rounded-full border border-gray-200 shadow dark:border-gray-700" />
                     {/* ... */}
                     <div className="flex flex-col items-start justify-start my-auto p-10">
@@ -112,7 +112,7 @@ export default function ShowHealthcare() {
                         ))}
                     </ul>
                 </div>
-
+                <div className="container" style={{ margin: "20px auto" }}>
                 {sections.map((section) => (
                     <Element name={section.id} key={section.id}>
                         {/* Include the corresponding component based on the section */}
@@ -122,6 +122,8 @@ export default function ShowHealthcare() {
                         {section.id === "tarifs" && <TarifsHealthcare healthcare_profil={healthcare_profil} />}
                     </Element>
                 ))}
+                </div>
+                
             </div>
         </>
     );
