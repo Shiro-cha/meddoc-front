@@ -66,7 +66,7 @@ export default function DigitOTP() {
         maxLength="1"
         name={key} // Use the key here
         value={otp[key]} // Bind the value of the input to the corresponding key in the OTP state
-        className="w-16 h-12 rounded mr-3 text-center text-2xl font-bold"
+        className="w-16 h-12 rounded mr-3 text-center text-2xl font-bold border-meddoc-dark"
         onChange={(event) => handlechange(event, index)}
         onKeyUp={(event) => handleBackSpace(event, index)}
       />
@@ -146,7 +146,7 @@ export default function DigitOTP() {
 
         </div>
 
-        <button type="submit" class="w-auto text-white m-10 bg-blue-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+        <button type="submit" class="w-auto text-white m-10 bg-blue-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 meddoc-orange">
           Valider
           {loading && (
             <svg aria-hidden="true" role="status" class="inline w-4 h-4 ml-3 text-gray-200 animate-spin dark:text-gray-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">

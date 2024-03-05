@@ -6,7 +6,8 @@ import Cookies from "js-cookie";
 import { useRef } from "react";
 import { toast } from "../Toast/Toast";
 
-export default function ChangePasswordForm() {
+export default function 
+ChangePasswordForm() {
     const PASSWORD_URL = "/user/changePassword"
     const errRef = useRef();
 
@@ -99,7 +100,7 @@ export default function ChangePasswordForm() {
 
     return (
         <div class="w-full p-6   bg-gray-100 rounded-lg shadow-lg dark:border my-10 dark:bg-gray-800 dark:border-gray-700 sm:p-8">
-            <h2 class="mb-1 text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+            <h2 class="mb-1 text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white color-meddoc-dark">
                 Changer votre mot de passe
             </h2>
             <p ref={errRef} className={errMsg ? "errmsg text-red-400 border border-red-300 block w-full p-2.5 rounded ring-red-300" : "offscreen"} aria-live="assertive">{errMsg}</p>
@@ -120,7 +121,7 @@ export default function ChangePasswordForm() {
 
                     <button onClick={onSubmit_change_password} class="w-full mx-auto text-white bg-blue-600 hover:bg-primary-700 focus:ring-4 focus:outline-none 
         focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 
-        dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+        dark:hover:bg-primary-700 dark:focus:ring-primary-800 meddoc-blue">
                         Modifier
                     </button>
 

@@ -31,7 +31,7 @@ export function PaginationComponent({ currentPage, totalPages, onPageChange }) {
                             onClick={() => onPageChange(page)}
                             aria-label={`Page ${page}`}
                             className={`flex items-center justify-center px-3 h-8 ${currentPage === page
-                                ? "text-white bg-blue-500"
+                                ? "text-white bg-blue-500 meddoc-dark"
                                 : "text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700"
                                 }`}
                         >
