@@ -75,7 +75,7 @@ export default function HealthcarePatientEnabled() {
     return (
         <section class="bg-white dark:bg-gray-900 h-96 p-4 sm:ml-64">
             {/* SEARCH WITH FILTER */}
-            <h2 class="text-2xl font-bold text-gray-400">LISTE DE MES PATIENTS :</h2>
+            <h2 class="text-2xl font-bold text-gray-400 color-meddoc-blue title-meddoc">LISTE DE MES PATIENTS :</h2>
 
             {/* <SearchSimpleInput onSearch={handleSearch} filters={[]} disableCalendarInput={false}></SearchSimpleInput> */}
             <div class="relative overflow-x-auto mt-5">
@@ -157,7 +157,7 @@ export default function HealthcarePatientEnabled() {
                                     <td className="px-6 py-4 ">
                                         <div className="flex">
                                             <div className="mx-4">
-                                                <button onClick={() => view_consultation(dataItem.user_id)}>
+                                                <button onClick={() => view_consultation(dataItem.user_id)} className="meddoc-orange">
                                                     <svg className="w-6 h-6 text-gray-400 hover:text-gray-700 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 18">
                                                         <path stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.539 17h12.476l4-9H5m-2.461 9a1 1 0 0 1-.914-1.406L5 8m-2.461 9H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.443a1 1 0 0 1 .8.4l2.7 3.6H16a1 1 0 0 1 1 1v2H5" />
                                                     </svg>

@@ -4,6 +4,27 @@
     border-color: #082A4D;
     box-shadow: 0 0 0 0.25rem #f3953031;
 }
+.MuiButtonBase-root.MuiButton-root.MuiButton-outlined.MuiButton-outlinedPrimary.MuiButton-sizeMedium.MuiButton-outlinedSizeMedium {
+    color: #ffffff; /* Set the text color */
+    background-color: #0096BB; /* Set the background color */
+    border-color: #0096BB; /* Set the border color */
+}
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+    fill: #f39530; /* Set the color of the icon */
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.OpenButton-textButton.css-vnscjq-MuiButtonBase-root-MuiButton-root {
+    color: #0096BB; /* Set the color of the text */
+}
+
+.Cell-dayOfMonth.Cell-highlightedText,.Cell-dayOfWeek.Cell-highlightedText {
+    color: #f39530 !important; /* Set the desired color for the elements */
+}
+.w-6 h-6.text-gray-800{
+    fill:#0096BB !important;
+    color: #0096BB !important;
+} 
+
 
 /* Updated Styles with Balanced Colors */
 #login-form {

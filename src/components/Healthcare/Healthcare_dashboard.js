@@ -299,10 +299,10 @@ function Dashboard() {
                                 }
 
                                 return (
-                                    <div key={index} className="flex flex-col items-center justify-center border-2 border-gray-600 px-4 py-6 rounded-lg">
+                                    <div key={index} className="flex flex-col items-center justify-center  px-4 py-6 rounded-lg shadow transition duration-300 hover:shadow-xl" style={{ backgroundColor: '#ffffff',cursor:"pointer"}}>
                                         {renderIcon(key)}
-                                        <h2 className="title-font font-medium text-3xl text-gray-900">{appointmentCounts[key]}</h2>
-                                        <p className="leading-relaxed">{getAppointmentTypeText(key)}</p>
+                                        <h2 className="title-font font-medium text-3xl text-gray-900 color-meddoc-dark">{appointmentCounts[key]}</h2>
+                                        <p className="leading-relaxed color-meddoc-blue">{getAppointmentTypeText(key)}</p>
                                     </div>
                                 );
                             })}

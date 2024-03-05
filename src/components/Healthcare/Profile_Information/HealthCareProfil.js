@@ -22,6 +22,8 @@ import jwtDecode from "jwt-decode";
 import { toast } from "../../Toast/Toast";
 import image_add from "../../../assets/svg/add-image-svgrepo-com.svg";
 
+import "../../../assets/css/login/form.css"
+
 export default function HealthCareProfile() {
 
     const MODIFY_PROFILE_FORM_URL = "/healthPro/addDescription"
@@ -570,7 +572,7 @@ export default function HealthCareProfile() {
                         <label for="floating_mail" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
                     </div>
                 </div>
-                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Modifier</button>
+                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 meddoc-orange">Modifier</button>
             </form>
         );
     };
@@ -581,7 +583,7 @@ export default function HealthCareProfile() {
             <div className="flex flex-col p-4 bg-slate-200 sm:ml-64">
                 {/* Profil */}
                 <div className=" w-full justify-start bg-white border rounded-lg border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
-                    <h5 class="m-4 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Mon profil </h5>
+                    <h5 class="m-4 text-xl font-bold tracking-tight text-gray-900 dark:text-white color-meddoc-blue">Mon profil </h5>
 
                     <div className="flex space-x-10">
                         <div>
@@ -678,7 +680,7 @@ export default function HealthCareProfile() {
                 >
 
                 </Keywords>
-                <button onClick={saveAllModification} class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Enregistrer</button>
+                <button onClick={saveAllModification} class="bg-blue-500  text-white font-bold py-2 px-4 rounded meddoc-blue">Enregistrer</button>
 
 
             </div >

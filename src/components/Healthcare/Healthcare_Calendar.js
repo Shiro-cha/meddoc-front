@@ -39,8 +39,11 @@ import { fr } from 'date-fns/locale';
 import { useRef } from 'react';
 import { toast } from '../Toast/Toast';
 import Swal from 'sweetalert2';
+import "../../assets/css/login/form.css"
 
 const link_setting = "/healthcare/appointment/settings"
+
+
 
 //LES RENDEZ-VOUS LIBRES
 
@@ -604,6 +607,7 @@ export default function HealthcareCalendar() {
                             style={
                                 { cursor: 'pointer' }
                             }
+                            className='er rounded-lg p-2 border-meddoc'
                         >
                             <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z" />
@@ -849,8 +853,8 @@ export default function HealthcareCalendar() {
         <div className='sm:ml-64'>
 
             <div className='m-4 flex flex-col space-y-5'>
-                <h2 class="text-2xl font-bold text-gray-400">CALENDRIER:</h2>
-                < Link to={link_setting} className='inline-flex items-center hover:text-blue-600'>
+                <h2 class="text-2xl font-bold text-gray-400 color-meddoc-blue">CALENDRIER:</h2>
+                < Link to={link_setting} className='inline-flex items-center hover:text-blue-600 color-meddoc-dark'>
                     <img src={setting} alt='setting_svg' className='w-8 h-8 mr-2'></img>
                     Paramétrages
                 </Link>
@@ -862,7 +866,7 @@ export default function HealthcareCalendar() {
                     }}
                     style={{ cursor: 'pointer' }
                     }
-                    className='inline-flex items-center hover:text-blue-600'>
+                    className='inline-flex items-center hover:text-blue-600 color-meddoc-dark'>
                     <svg class="w-6 h-6 mr-2 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1v3m5-3v3m5-3v3M1 7h18M5 11h10M2 3h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" />
                     </svg>
@@ -888,14 +892,14 @@ export default function HealthcareCalendar() {
                         <div>
 
                         </div>
-                        <h2 className="text-2xl font-bold mb-4" >Ajouter un évènement ou congé:</h2>
+                        <h2 className="text-2xl font-bold mb-4 color-meddoc-blue "  style={{ textAlign: 'center' ,fontSize: '20px'}}>Ajouter un évènement ou congé:</h2>
                         <p ref={errRef} className={errMsg ? "errmsg text-red-400 border border-red-300 block w-full p-2.5 rounded ring-red-300" : "offscreen"} aria-live="assertive">{errMsg}</p>
 
-                        <form onSubmit={add_evenement_submit}>
+                        <form onSubmit={add_evenement_submit} id="login-form">
 
                             <div className="flex flex-col space-y-4">
                                 <div className="flex flex-col">
-                                    <label className="text-gray-700 font-bold mb-2" htmlFor="start_date">
+                                    <label className="text-gray-700 font-bold mb-2 color-meddoc-dark" htmlFor="start_date">
                                         Date de debut:
                                     </label>
                                     <input
@@ -909,7 +913,7 @@ export default function HealthcareCalendar() {
                                     />
                                 </div>
                                 <div className="flex flex-col">
-                                    <label className="text-gray-700 font-bold mb-2" htmlFor="start_date">
+                                    <label className="text-gray-700 font-bold mb-2 color-meddoc-dark" htmlFor="start_date">
                                         Date de fin:
                                     </label>
                                     <input
@@ -924,19 +928,19 @@ export default function HealthcareCalendar() {
                                 </div>
 
                                 <div className="flex flex-col">
-                                    <label className="text-gray-700 font-bold mb-2" htmlFor="raison">
+                                    <label className="text-gray-700 font-bold mb-2 color-meddoc-dark" htmlFor="raison">
                                         Raison:
                                     </label>
                                     <textarea
                                         id="raison"
-                                        className="border border-gray-300 p-2 rounded-lg"
+                                        className="border border-gray-300 p-2 rounded-lg color-meddoc-dark"
                                         required
                                     ></textarea>
                                 </div>
 
                                 <div className="flex justify-center">
                                     <button
-                                        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                        className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 meddoc-orange"
                                         type='submit'
                                     >
                                         Sauvegarder

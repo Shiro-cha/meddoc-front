@@ -7,11 +7,11 @@ export const Tarifs = ({ tempItems, openFormAdd, openAdd, closeAdd, onsubmit, me
     return (
         <div className="my-5 p-3 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div className="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="mr-2" width="25" height="25" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M403.29 32H280.36a14.46 14.46 0 0 0-10.2 4.2L24.4 281.9a28.85 28.85 0 0 0 0 40.7l117 117a28.86 28.86 0 0 0 40.71 0L427.8 194a14.46 14.46 0 0 0 4.2-10.2v-123A28.66 28.66 0 0 0 403.29 32Z" /><path fill="currentColor" d="M352 144a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="m230 480l262-262a13.81 13.81 0 0 0 4-10V80" /></svg>
-                <h4 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Tarifs :</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" className="mr-2 color-meddoc-blue" width="25" height="25" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M403.29 32H280.36a14.46 14.46 0 0 0-10.2 4.2L24.4 281.9a28.85 28.85 0 0 0 0 40.7l117 117a28.86 28.86 0 0 0 40.71 0L427.8 194a14.46 14.46 0 0 0 4.2-10.2v-123A28.66 28.66 0 0 0 403.29 32Z" /><path fill="currentColor" d="M352 144a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="m230 480l262-262a13.81 13.81 0 0 0 4-10V80" /></svg>
+                <h4 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-white color-meddoc-dark">Tarifs :</h4>
                 <button type="button" class="m-2 flex" onClick={openAdd}>
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                        <path stroke="blue" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 5.757v8.486M5.757 10h8.486M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    <svg class="w-6 h-6 color-meddoc-orange" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 5.757v8.486M5.757 10h8.486M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
                 </button>
 
@@ -27,7 +27,7 @@ export const Tarifs = ({ tempItems, openFormAdd, openAdd, closeAdd, onsubmit, me
 
                             <div className="flex items-center">
 
-                                <button className='m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+                                <button className='m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded meddoc-blue'
                                     onClick={onsubmit}> Ajouter</button>
                                 <button type="button" className='m-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded border-red-400 border'
                                     onClick={closeAdd}>
@@ -76,11 +76,11 @@ export const Experiences = ({ tempItems, openFormAdd, openAdd, closeAdd, onsubmi
     return (
         <div className="my-5 p-3 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div className="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="mr-2" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21q-.825 0-1.412-.587T2 19V8q0-.825.588-1.412T4 6h4V4q0-.825.588-1.412T10 2h4q.825 0 1.413.588T16 4v2h4q.825 0 1.413.588T22 8v11q0 .825-.587 1.413T20 21H4Zm0-2h16V8H4v11Zm6-13h4V4h-4v2ZM4 19V8v11Z" /></svg>
-                <h4 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Experiences :</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" className="mr-2 color-meddoc-blue" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21q-.825 0-1.412-.587T2 19V8q0-.825.588-1.412T4 6h4V4q0-.825.588-1.412T10 2h4q.825 0 1.413.588T16 4v2h4q.825 0 1.413.588T22 8v11q0 .825-.587 1.413T20 21H4Zm0-2h16V8H4v11Zm6-13h4V4h-4v2ZM4 19V8v11Z" /></svg>
+                <h4 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-white color-meddoc-dark">Experiences :</h4>
                 <button type="button" class="m-2 flex" onClick={openAdd}>
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                        <path stroke="blue" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 5.757v8.486M5.757 10h8.486M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    <svg class="w-6 h-6 color-meddoc-orange" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 5.757v8.486M5.757 10h8.486M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
                 </button>
             </div>
@@ -102,7 +102,7 @@ export const Experiences = ({ tempItems, openFormAdd, openAdd, closeAdd, onsubmi
 
                             <div className="flex items-center">
 
-                                <button className='m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+                                <button className='m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded meddoc-blue'
                                     onClick={onsubmit}> Ajouter</button>
                                 <button type="button" className='m-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded border-red-400 border'
                                     onClick={closeAdd}>
@@ -165,11 +165,11 @@ export const Diplome = ({ tempItems, openFormAdd, openAdd, closeAdd, onsubmit, m
     return (
         <div className="my-5 p-3 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div className="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" className="mr-2" viewBox="0 0 48 48"><defs><mask id="ipTDegreeHat0"><g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"><path fill="#555" d="M2 17.4L23.022 9l21.022 8.4l-21.022 8.4L2 17.4Z" /><path stroke-linecap="round" d="M44.044 17.51v9.223m-32.488-4.908v12.442S16.366 39 23.022 39c6.657 0 11.467-4.733 11.467-4.733V21.825" /></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTDegreeHat0)" /></svg>
-                <h4 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Diplome(s) :</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" className="mr-2 color-meddoc-blue" viewBox="0 0 48 48"><defs><mask id="ipTDegreeHat0"><g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"><path fill="#555" d="M2 17.4L23.022 9l21.022 8.4l-21.022 8.4L2 17.4Z" /><path stroke-linecap="round" d="M44.044 17.51v9.223m-32.488-4.908v12.442S16.366 39 23.022 39c6.657 0 11.467-4.733 11.467-4.733V21.825" /></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTDegreeHat0)" /></svg>
+                <h4 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-white color-meddoc-dark">Diplome(s) :</h4>
                 <button type="button" class="m-2 flex" onClick={openAdd}>
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                        <path stroke="blue" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 5.757v8.486M5.757 10h8.486M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    <svg class="w-6 h-6  color-meddoc-orange" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 5.757v8.486M5.757 10h8.486M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
                 </button>
             </div>
@@ -185,7 +185,7 @@ export const Diplome = ({ tempItems, openFormAdd, openAdd, closeAdd, onsubmit, m
                             <Input {...diplome_validation} />
                             <div className="flex items-center">
 
-                                <button className='m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+                                <button className='m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded meddoc-blue'
                                     onClick={onsubmit}> Ajouter</button>
                                 <button type="button" className='m-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded border-red-400 border'
                                     onClick={closeAdd}>
@@ -235,10 +235,10 @@ export const Keywords = ({ tempItems, openFormAdd, openAdd, closeAdd, onsubmit, 
     return (
         <div className="my-5 p-3 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <div className="flex items-center">
-                <h4 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Mots-clé(s) :</h4>
-                <button type="button" class="m-2 flex" onClick={openAdd}>
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                        <path stroke="blue" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 5.757v8.486M5.757 10h8.486M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                <h4 class="text-lg font-semibold tracking-tight text-gray-900 dark:text-white color-meddoc-dark">Mots-clé(s) :</h4>
+                <button type="button" class="m-2 flex " onClick={openAdd}>
+                    <svg class="w-6 h-6 color-meddoc-orange" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 5.757v8.486M5.757 10h8.486M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                     </svg>
                 </button>
             </div>
@@ -255,7 +255,7 @@ export const Keywords = ({ tempItems, openFormAdd, openAdd, closeAdd, onsubmit, 
                             <Input {...keywordvalidation} />
                             <div className="flex items-center">
 
-                                <button className='m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+                                <button className='m-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded meddoc-blue'
                                     onClick={onsubmit}> Ajouter</button>
                                 <button type="button" className='m-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded border-red-400 border'
                                     onClick={closeAdd}>
