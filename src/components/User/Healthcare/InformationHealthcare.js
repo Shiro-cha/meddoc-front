@@ -3,6 +3,7 @@ import { fr } from "date-fns/locale";
 import { useEffect } from "react";
 import { useMemo } from "react";
 import { useState } from "react";
+import { FaCalendar, FaMapMarker, FaDotCircle } from 'react-icons/fa'; 
 import { useMatch, useNavigate } from "react-router-dom";
 import axios from "../../../api/axios";
 import Cookies from "js-cookie";
@@ -402,26 +403,28 @@ export function PresentationHealthcare({ healthcare_profil }) {
 
             </div> */}
             {/* <hr></hr> */}
-            <h4 class="mt-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" className="mr-2" viewBox="0 0 48 48"><defs><mask id="ipTDegreeHat0"><g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"><path fill="#555" d="M2 17.4L23.022 9l21.022 8.4l-21.022 8.4L2 17.4Z" /><path stroke-linecap="round" d="M44.044 17.51v9.223m-32.488-4.908v12.442S16.366 39 23.022 39c6.657 0 11.467-4.733 11.467-4.733V21.825" /></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTDegreeHat0)" /></svg>
+            <h4 class="mt-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white flex items-center color-meddoc-dark">
+                <svg xmlns="http://www.w3.org/2000/svg"   width="32" height="32" className="mr-2 color-meddoc-blue" viewBox="0 0 48 48"><defs><mask id="ipTDegreeHat0"><g fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="4"><path fill="#555" d="M2 17.4L23.022 9l21.022 8.4l-21.022 8.4L2 17.4Z" /><path stroke-linecap="round" d="M44.044 17.51v9.223m-32.488-4.908v12.442S16.366 39 23.022 39c6.657 0 11.467-4.733 11.467-4.733V21.825" /></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipTDegreeHat0)" /></svg>
 
                 Diplômes nationaux et universitaires :</h4>
-            <ul className="mb-4">
-                {healthcare_description?.diplome && healthcare_description?.diplome.map((diplome, index) => (
-                    <li key={index} className="text-gray-700 dark:text-gray-400 flex justify-start m-2">
-                        <div className="mr-10 font-semibold tracking-tight text-gray-900 dark:text-white ">
-                            {diplome.anne_diplome}
+                <ul className="mb-4">
+                    {healthcare_description?.diplome && healthcare_description?.diplome.map((diplome, index) => (
+                    <li key={index} className="text-gray-700 dark:text-gray-400 flex justify-start m-2 items-center">
+                        <FaCalendar className="mr-2 text-gray-400" size={20} /> {/* Graduation Cap Icon */}
+                        <div className="mr-4 font-semibold tracking-tight text-gray-900 dark:text-white ">
+                        {diplome.anne_diplome}
                         </div>
+                        <FaMapMarker className="mr-2 text-gray-400" size={20} /> {/* Map Marker Icon */}
                         <div>
-                            {diplome.lieu_diplome}
+                        {diplome.lieu_diplome}
                         </div>
                     </li>
-                ))}
-            </ul>
+                    ))}
+                </ul>
             <hr></hr>
 
-            <h4 class="mt-4 text-lg font-semibold tracking-tight text-gray-900 dark:text-white flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="mr-2" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21q-.825 0-1.412-.587T2 19V8q0-.825.588-1.412T4 6h4V4q0-.825.588-1.412T10 2h4q.825 0 1.413.588T16 4v2h4q.825 0 1.413.588T22 8v11q0 .825-.587 1.413T20 21H4Zm0-2h16V8H4v11Zm6-13h4V4h-4v2ZM4 19V8v11Z" /></svg>
+            <h4 class="mt-4 text-lg font-semibold tracking-tight text-gray-900 dark:text-white flex items-center color-meddoc-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" className="mr-2 color-meddoc-blue" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4 21q-.825 0-1.412-.587T2 19V8q0-.825.588-1.412T4 6h4V4q0-.825.588-1.412T10 2h4q.825 0 1.413.588T16 4v2h4q.825 0 1.413.588T22 8v11q0 .825-.587 1.413T20 21H4Zm0-2h16V8H4v11Zm6-13h4V4h-4v2ZM4 19V8v11Z" /></svg>
 
                 Expériences :</h4>
             <ul>
@@ -429,9 +432,11 @@ export function PresentationHealthcare({ healthcare_profil }) {
 
                     <li key={index} className="text-gray-700 dark:text-gray-400 my-2">
                         <div className="flex">
+                        <FaCalendar className="mr-2 text-gray-400" size={20} /> {/* Graduation Cap Icon */}
                             <div className="mr-4 font-semibold tracking-tight text-gray-900 dark:text-white ">
                                 {experience.dateDebut} - {experience.dateFin}
                             </div>
+                            <FaDotCircle className="mr-2 text-gray-400" size={20}/> {/* Map Marker Icon */}
                             <div >
                                 {experience.poste}
                             </div>
@@ -483,9 +488,9 @@ export function TarifsHealthcare({ healthcare_profil }) {
     return (
         <div class="my-5 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#" className="flex items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="mr-2" width="25" height="25" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M403.29 32H280.36a14.46 14.46 0 0 0-10.2 4.2L24.4 281.9a28.85 28.85 0 0 0 0 40.7l117 117a28.86 28.86 0 0 0 40.71 0L427.8 194a14.46 14.46 0 0 0 4.2-10.2v-123A28.66 28.66 0 0 0 403.29 32Z" /><path fill="currentColor" d="M352 144a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="m230 480l262-262a13.81 13.81 0 0 0 4-10V80" /></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" className="mr-2 color-meddoc-blue" width="25" height="25" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M403.29 32H280.36a14.46 14.46 0 0 0-10.2 4.2L24.4 281.9a28.85 28.85 0 0 0 0 40.7l117 117a28.86 28.86 0 0 0 40.71 0L427.8 194a14.46 14.46 0 0 0 4.2-10.2v-123A28.66 28.66 0 0 0 403.29 32Z" /><path fill="currentColor" d="M352 144a32 32 0 1 1 32-32a32 32 0 0 1-32 32Z" /><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="m230 480l262-262a13.81 13.81 0 0 0 4-10V80" /></svg>
 
-                <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Tarif(s) :</h5>
+                <h5 class="mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white color-meddoc-dark">Tarif(s) :</h5>
             </a>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"></p>
             <ul>
