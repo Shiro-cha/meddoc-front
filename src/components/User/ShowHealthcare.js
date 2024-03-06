@@ -74,7 +74,7 @@ export default function ShowHealthcare() {
     return (
         <>
             <div className="flex flex-col bg-slate-200 sm:ml-64">
-                <div className="flex w-full justify-start bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700">
+                <div className="flex w-full justify-start bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 absolute right-0 left-0 clear-both">
                     
                     <img src={healthcare_profil?.image ? healthcare_profil?.image : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"} alt="Photo de profil" className="w-36 h-36 object-cover rounded-full border border-gray-200 shadow dark:border-gray-700" />
                     {/* ... */}
@@ -94,7 +94,7 @@ export default function ShowHealthcare() {
                     </div>
                 </div>
 
-                <div className="sticky top-[68px] bg-slate-100 text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 z-[3]">
+                <div className="sticky top-[68px] bg-slate-100 text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 z-[3] margin-top-10">
                     <ul className="flex md:flex-wrap -mb-px">
                         {sections.map((section) => (
                             <li className="mr-2" key={section.id}>
