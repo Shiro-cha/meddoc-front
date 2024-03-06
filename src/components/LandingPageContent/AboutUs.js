@@ -40,7 +40,7 @@ const items = [
 export default function About() {
   return (
     <section id="about" class="about">
-      <div class="container flex justify-center content-center align-items-stretch">
+      <div class=" flex justify-center content-center align-items-stretch">
         <div className='m-10'>
           <img src={doctor_illustration} className='hidden lg:block my-20' alt='doctor_illustration'></img>
         </div>
