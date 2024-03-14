@@ -46,7 +46,7 @@ export default function Header() {
         </div>
         <div className="flex items-center space-x-2">
           <FaLinkedin />
-          <a href="https://www.linkedin.com" className="color-meddoc-dark">LinkedIn</a>
+          <a href="https://www.linkedin.com" className="color-meddoc-dark">Meddoc</a>
         </div>
       </div>
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-4 dark:bg-gray-800 min-h-[68px]">
