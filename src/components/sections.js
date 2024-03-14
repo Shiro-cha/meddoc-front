@@ -146,7 +146,7 @@ export function Section() {
             <Whyus />
             <About />
             <Sponsoring />
-            {/*<AreUPro />*/}
+            <AreUPro />
 
             <Subscribe />
 
