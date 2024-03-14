@@ -10,13 +10,13 @@ const PrivacyPolicy = () => {
   );
 
   return (
-    <section id="privacy-policy" className="privacy-policy >
+    <section id="privacy-policy" className="privacy-policy">
       <div className="container flex flex-col lg:flex-row items-center justify-center lg:space-x-8 py-8 lg:p-16">
         <div className="flex items-center justify-center w-24 h-24 bg-orange-300 rounded-full">
           <FaLock className="w-12 h-12 text-white" />
         </div>
         <div className="text-center lg:text-left">
-          <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 dark:text-gray-200 mb-4">
+          <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 dark:text-gray-200 mb-4 color-meddoc-dark">
             Protection des données
           </h2>
           <p className="text-gray-700 dark:text-gray-400 text-justify mb-4">
