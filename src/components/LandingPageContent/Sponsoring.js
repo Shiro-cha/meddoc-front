@@ -13,8 +13,8 @@ import usaid from '../../assets/partenaires/usaid.png';
 
 export default function Sponsoring() {
   const image_slides = [
-    [AAL, AWS, Orange, Zafitody],
-    [incubeme, usaid], // Second slide with remaining partners
+    [AAL, AWS, Orange],
+    [Zafitody, incubeme, usaid], // Second slide with remaining partners
   ];
 
   return (
