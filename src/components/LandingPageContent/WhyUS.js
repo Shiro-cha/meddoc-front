@@ -46,12 +46,12 @@ export default function Whyus() {
                 item.id % 3 === 0 ? "lg:mt-16" : ""
               }`}
             >
-              <Link to={item.link}>
+              <Link to={item.link} className="w-full meddoc-orange">
                 <div className="w-16 h-16 meddoc-blue rounded-full flex items-center justify-center">
                   {item.icon}
                 </div>
               </Link>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify" style={{height:200px}}>
                 {item.description}
               </p>
             </div>
