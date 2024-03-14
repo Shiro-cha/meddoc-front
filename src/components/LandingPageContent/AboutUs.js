@@ -5,7 +5,7 @@ import { FaLock } from "react-icons/fa";
 const PrivacyPolicy = () => {
   const privacyPolicyText = (
     <>
-      Vos données sont en sécurité avec OneDoc ! En plus des certifications ISO 27001 et DPCO, nos données sont également cryptées et stockées sur des serveurs en Suisse conformément à la nouvelle loi fédérale sur la protection des données (nFADP).
+      Vos données sont en sécurité avec Meddoc ! En plus des certifications ISO 27001 et DPCO, nos données sont également cryptées et stockées sur des serveurs en Suisse conformément à la nouvelle loi fédérale sur la protection des données (nFADP).
     </>
   );
 
