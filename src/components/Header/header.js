@@ -35,18 +35,18 @@ export default function Header() {
 
   return (
     <header className='sticky top-0 z-[100] shadow'>
-      <div className="bg-gray-200 text-gray-600 py-2 px-4 flex items-center justify-center">
-        <div className="flex items-center space-x-4">
+      <div className="bg-gray-200 text-gray-600 py-2 px-4 flex items-center justify-center gap-3">
+        <div className="flex items-center space-x-2">
           <FaPhone />
-          <p className="color-meddoc-blue">123-456-7890</p>
+          <a className="color-meddoc-dark" href="tel:123-456-7890">123-456-7890</a>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-2">
           <FaEnvelope />
-          <p className="color-meddoc-blue">example@example.com</p>
+          <a className="color-meddoc-dark" href="mailto:contact@meddoc.mg">contact@meddoc.mg</a>
         </div>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-2">
           <FaLinkedin />
-          <a href="https://www.linkedin.com" className="color-meddoc-blue">LinkedIn</a>
+          <a href="https://www.linkedin.com" className="color-meddoc-dark">LinkedIn</a>
         </div>
       </div>
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-4 dark:bg-gray-800 min-h-[68px]">
