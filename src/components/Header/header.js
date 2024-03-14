@@ -14,21 +14,10 @@ export default function Header() {
       link: "/",
     },
     {
-      title_text: "A propos de nous",
-      link: "/a_propos_de_nous",
-    },
-    {
       title_text: "Nos Services",
       link: "/nos-services",
     },
-    {
-      title_text: "FAQs",
-      link: "/foire_aux_questions",
-    },
-    {
-      title_text: "Contact",
-      link: "/contact_us",
-    },
+    
   ]
   const menu_button_items = [
     {
@@ -46,18 +35,18 @@ export default function Header() {
 
   return (
     <header className='sticky top-0 z-[100] shadow'>
-      <div className="bg-gray-200 text-gray-600 py-2 px-4 flex items-center justify-between">
+      <div className="bg-gray-200 text-gray-600 py-2 px-4 flex items-center justify-center">
         <div className="flex items-center space-x-4">
           <FaPhone />
-          <p>123-456-7890</p>
+          <p className="color-meddoc-blue">123-456-7890</p>
         </div>
         <div className="flex items-center space-x-4">
           <FaEnvelope />
-          <p>example@example.com</p>
+          <p className="color-meddoc-blue">example@example.com</p>
         </div>
         <div className="flex items-center space-x-4">
           <FaLinkedin />
-          <a href="https://www.linkedin.com">LinkedIn</a>
+          <a href="https://www.linkedin.com" className="color-meddoc-blue">LinkedIn</a>
         </div>
       </div>
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-4 dark:bg-gray-800 min-h-[68px]">
