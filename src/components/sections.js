@@ -1,6 +1,7 @@
 import About from "./LandingPageContent/AboutUs";
 import Whyus from "./LandingPageContent/WhyUS";
 import Sponsoring from "./LandingPageContent/Sponsoring";
+import AreUPro from "./LandingPageContent/AreUPro";
 import doctor_illustration from "../assets/illustration/Doctor Character Illustration.svg";
 import Subscribe from "./LandingPageContent/Concact_us";
 import {  createSearchParams, useNavigate } from "react-router-dom";
@@ -145,6 +146,7 @@ export function Section() {
             <Whyus />
             <About />
             <Sponsoring />
+            <AreUPro />
 
             <Subscribe />
 
