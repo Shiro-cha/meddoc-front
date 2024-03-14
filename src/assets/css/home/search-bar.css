@@ -37,16 +37,6 @@
   color: #082A4D;
 }
 
-#search-button {
-  background-color: #97E4FF;
-  padding: 0 20px; /* Adjust the padding as needed */
-  border: 1px solid #97E4FF;
-}
-
-#search-button:hover,
-#search-button:focus {
-  border-color: #97E4FF;
-}
 
 /* Media query for responsiveness */
 @media screen and (max-width: 600px) {
