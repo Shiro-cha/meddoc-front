@@ -15,14 +15,28 @@ const items = [
     title: 'Hippocamp E-learning',
     link: '/e-learning',
     icon: eLearning,
-    desciption:"Excellence médicale via des cours interactifs, favorisant l'apprentissage médical innovant et pratique."
+    desciption:"Trouvez la disponibilité de tous nos praticiens en un coup d'œil."
   },
   {
     id: 3,
     title: 'Conseil santé',
     link: '/conseil-soignant',
     icon: conseil,
-    desciption:"Priorisez le bien-être: alimentation équilibrée, exercice régulier, sommeil suffisant - clés d'une santé optimale."
+    desciption:"Réservez vos rendez-vous à tout moment, où que vous soyez, 24h/24 et 7j/7."
+  },
+  {
+    id: 4,
+    title: 'Conseil santé',
+    link: '/conseil-soignant',
+    icon: conseil,
+    desciption:"Rappelez-vous tous vos rendez-vous grâce aux rappels SMS envoyés à l'avance."
+  },
+  {
+    id: 5,
+    title: 'Conseil santé',
+    link: '/conseil-soignant',
+    icon: conseil,
+    desciption:"Gérez, déplacez ou annulez facilement vos rendez-vous."
   },
 ]
 
@@ -52,9 +66,9 @@ export default function Whyus() {
           <div key={item.id} class="flex flex-col p-4 bg-white  border border-gray-200 rounded-lg shadow  hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 " >
             <img src={item.icon} className="w-16 m-auto mb-4" alt="doctor_profil"></img>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify">{item.desciption}</p>
-            <Link to={item.link} class="mb-4 text-xl m-auto font-bold tracking-tight text-gray-900 dark:text-white">
+            {/*<Link to={item.link} class="mb-4 text-xl m-auto font-bold tracking-tight text-gray-900 dark:text-white">
               <h5>{item.title}</h5>
-            </Link>
+            </Link>*/}
           </div>
         ))}
 
