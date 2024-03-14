@@ -38,6 +38,7 @@ const items = [
 export default function Whyus() {
   return (
     <section id="why-us" className="why-us">
+        <h2 className="color-meddoc-blue title-meddoc">C'est simple, rapide et gratuit</h2>
       <div className="container grid grid-cols-2 gap-4 lg:grid-cols-4 lg:p-16 justify-center items-center">
         {items.map((item, index) => (
           index !== 1 && (
