@@ -36,9 +36,10 @@ const items = [
 export default function Whyus() {
   return (
     <section id="why-us" className="why-us">
-      <div className="container grid grid-cols-2 gap-4 lg:grid-cols-4 lg:p-16 justify-center items-center">
+    <h1 className="title-meddoc meddoc-dark">C'est simple, rapide et gratuit</h1>
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:p-16 justify-center items-center">
         {items.map((item, index) => (
-          index !== 1 && (
+          (
             <div
               key={item.id}
               className={`flex flex-col p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 ${
@@ -46,7 +47,7 @@ export default function Whyus() {
               }`}
             >
               <Link to={item.link}>
-                <div className="w-16 h-16 bg-orange-300 rounded-full flex items-center justify-center">
+                <div className="w-16 h-16 meddoc-blue rounded-full flex items-center justify-center">
                   {item.icon}
                 </div>
               </Link>

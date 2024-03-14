@@ -1,76 +1,35 @@
-import doctor_illustration from '../../assets/illustration/doctor_help.png';
-import doctor from "../../assets/image/doctor.svg"
-import innovation from "../../assets/png/innovation.png"
-import ethique from "../../assets/png/security.png"
-import proximity from "../../assets/png/proximity.png"
-import fiability from "../../assets/png/fiability.png"
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaLock } from "react-icons/fa";
 
-const items = [
-  {
-    id: 1,
-    title: 'INNOVATION',
-    description:
-      'Le croisement de la technologie et du médical, l’innovation pour apporter des solutions adaptées aux besoins des patients et des professionnels de santé',
-    icon:innovation
-  },
-  {
-    id: 2,
-    title: 'ÉTHIQUE',
-    description:
-      'La sécurité des données est notre priorité et nous n’intervenons jamais dans la relation médicale entre patients et professionnels de santé',
-    icon:ethique
-  },
-  {
-    id: 3,
-    title: 'PROXIMITÉ',
-    description:
-      'Nous sommes convaincus que la technologie est aussi un vecteur de proximité humaine, faciliter la mise en relation entre un patient et un professionnel de santé',
-    icon:proximity
-  },
-  {
-    id: 4,
-    title: 'FIABILITÉ',
-    description:
-      'Nous développons des solutions simples, robustes et efficaces',
-    icon:fiability
-  },
-];
+const PrivacyPolicy = () => {
+  const privacyPolicyText = (
+    <>
+      Vos données sont en sécurité avec OneDoc ! En plus des certifications ISO 27001 et DPCO, nos données sont également cryptées et stockées sur des serveurs en Suisse conformément à la nouvelle loi fédérale sur la protection des données (nFADP).
+    </>
+  );
 
-
-export default function About() {
   return (
-    <section id="about" class="about">
-      <div class=" flex justify-center content-center align-items-stretch">
-        <div className='m-10'>
-          <img src={doctor_illustration} className='hidden lg:block my-20' alt='doctor_illustration'></img>
+    <section id="privacy-policy" className="privacy-policy bg-orange-100">
+      <div className="container flex flex-col lg:flex-row items-center justify-center lg:space-x-8 py-8 lg:p-16">
+        <div className="flex items-center justify-center w-24 h-24 bg-orange-300 rounded-full">
+          <FaLock className="w-12 h-12 text-white" />
         </div>
-        <div class=" m-10 md:col-span-7 lg:col-span-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-
-
-          <h5 class="mb-4 text-xl font-bold  dark:text-white md:text-5xl lg:text-3xl text-gray-900"><span class="color-meddoc-blue">MEDDoC </span> Services.</h5>
-          <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Nous proposons un service d’accompagnement santé complet et innovant.</p>
-
-          <br></br>
-
-          {items.map((item) => (
-            <div key={item.id} className="flex content-center m-4">
-              <img src={item.icon} className='w-20 mx-4' alt="Doctor" />
-              <div>
-                <h4 className="text-lg font-semibold my-2">
-                  <a href="#">{item.title}</a>
-                </h4>
-                <p className="description text-gray-400">{item.description}</p>
-              </div>
-            </div>
-          ))}
-
-
-
+        <div className="text-center lg:text-left">
+          <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 dark:text-gray-200 mb-4">
+            Protection des données
+          </h2>
+          <p className="text-gray-700 dark:text-gray-400 text-justify mb-4">
+            {privacyPolicyText}
+          </p>
+          <Link to="/cug" className="btn bg-primary-500 text-white hover:bg-primary-600 py-2 px-4 rounded-md">
+            Lire le CUG
+          </Link>
         </div>
       </div>
-
-
     </section>
-  )
+  );
+};
 
-}
+export default PrivacyPolicy;
+
