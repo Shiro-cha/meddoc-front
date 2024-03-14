@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
   );
 
   return (
-    <section id="privacy-policy" className="privacy-policy bg-orange-100">
+    <section id="privacy-policy" className="privacy-policy >
       <div className="container flex flex-col lg:flex-row items-center justify-center lg:space-x-8 py-8 lg:p-16">
         <div className="flex items-center justify-center w-24 h-24 bg-orange-300 rounded-full">
           <FaLock className="w-12 h-12 text-white" />
@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
           <p className="text-gray-700 dark:text-gray-400 text-justify mb-4">
             {privacyPolicyText}
           </p>
-          <Link to="/cug" className="btn bg-primary-500 text-white hover:bg-primary-600 py-2 px-4 rounded-md">
+          <Link to="/cug" className="btn text-white py-2 px-4 rounded-md meddoc-dark">
             Lire le CUG
           </Link>
         </div>
