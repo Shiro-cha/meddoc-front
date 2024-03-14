@@ -23,7 +23,7 @@ export default function AboutUsPage() {
   };
 
   return (
-    <section className="container mx-auto py-8">
+    <section className=" mx-auto py-8">
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-8">
         <h2 className="text-3xl font-bold mb-4 color-meddoc-blue">{aboutUsContent.companyName}</h2>
         <p className="text-lg mb-6 color-meddoc-dark font-normal">{aboutUsContent.mission}</p>

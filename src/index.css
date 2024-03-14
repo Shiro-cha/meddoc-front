@@ -29,6 +29,7 @@ code {
   margin-top: auto;
   flex-shrink: 0 !important;
 }
+
 .meddoc-blue{
   background-color: #0096BB;
   color: white;
@@ -66,9 +67,71 @@ code {
   font-size: 25px !important;
   text-align: center;
 }
+.title-meddoc-medium{
+  font-size: 25px !important;
+  letter-spacing: 1px;
+  font-family: Ubuntu,Arial,sans-serif;
+}
+h2.od-profile-header-description-specialty {
+  font-size: 20px;
+  margin-top: 8px;
+  letter-spacing: .9px;
+
+}
+.od-profile-content-inactive {
+  flex: 4;
+  margin-top: 16px;
+  margin-left: 36px;
+  min-width: 240px;
+  max-width: 400px;
+  z-index: 3;
+}
+/** hide .od-profile-content-inactive on small screens */
+@media screen and (max-width: 1024px) {
+  .od-profile-content-inactive {
+    display: none;
+  }
+}
+.od-profile-content-inactive-body {
+  padding:12px;
+  color:#4a4e4f;
+  background-color:#fff;
+  border:1px solid #e0e0e0;
+  box-shadow:0 2px 14px 0 rgba(0,0,0,.1);
+  border-radius:0 0 4px 4px;
+  font-size: 14px;
+}
+.od-profile-content-inactive-header {
+  padding: 12px;
+  color: #fff;
+  background-color: #0096BB;
+  border-radius: 12px 12px 0 0;
+}
+.od-profile-content-inactive-sticky:not(.od-profile-content-inactive-sticky--disabled) {
+  position: sticky;
+  top: 16px;
+}
 .swiper-button-prev, .swiper-button-next{
   color: #082A4D !important;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active{
   background-color: #082A4D !important;
 }
+.sticky.top-0.bg-white.px-2.py-1 {
+  color: #0096BB !important;
+}
+button.bg-gray-400.text-white.cursor-auto.px-2.py-1.m-1.rounded.w-20 {
+
+  background-color: #e2e3e4 !important;
+}
+.container {
+  max-width: 900px;
+}
+/* make container responsive */
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+}
+
+

@@ -589,14 +589,14 @@ export default function UserSetting() {
     };
 
     return (
-      <form class="max-w-md py-4" onSubmit={handleSubmit}>
-        <div>
+      <form class="w-full py-4" onSubmit={handleSubmit}>
+        <div class="flex  flex-col justify-center ">
           <div class="relative z-0 w-10 mb-5 group">
             <p class="block py-2.5 px-0 w-10 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer">{information?.identifier}</p>
             <label for="id" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Identifiant</label>
           </div>
         </div>
-        <div class="grid md:grid-cols-3 md:gap-6">
+        <div class="grid md:grid-cols-2 md:gap-6">
           <div class="relative z-0 w-full mb-5 group">
             <input defaultValue={information?.name}
               value={formData?.name}
@@ -613,16 +613,18 @@ export default function UserSetting() {
               defaultValue={information?.firstname} type="text" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
             <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Prénom(s)</label>
           </div>
-          <div class="relative z-0 w-full mb-5 group">
+
+        </div>
+        <div class="grid md:grid-cols-1 md:gap-6">
+        <div class="relative z-0 w-full mb-5 group">
             <input
               name="birthdate"
               type='date'
               value={formData?.birthdate}
               onChange={handleChange}
-              defaultValue={information?.birthdate} id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+              defaultValue={information?.birthdate} id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer border-meddoc-dark" placeholder=" " required />
             <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Date de naissance</label>
           </div>
-
         </div>
 
         <div class="grid md:grid-cols-2 md:gap-6">
@@ -641,7 +643,7 @@ export default function UserSetting() {
             <label for="floating_mail" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email</label>
           </div>
         </div>
-        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Modifier</button>
+        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 meddoc-blue">Modifier</button>
       </form>
     );
   };
@@ -649,24 +651,24 @@ export default function UserSetting() {
 
   return (
 
-    <main className="p-4 sm:ml-64">
+    <main className="p-6 sm:ml-64">
       <div >
-        <h1 className="font-bold text-2xl ml-5">Paramètres de l'utilisateur:</h1>
+        <h1 className="font-bold text-2xl ml-5 color-meddoc-blue title-meddoc ">Paramètres de l'utilisateur:</h1>
       </div>
       <div className="flex flex-col  ">
 
         <div class="max-w-full px-4 mt-5 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
 
-          <div className="relative mb-8">
+          <div className="relative mb-8 flex flex-col justify-center items-center">
 
-            <h5 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white p-8">Mon profil </h5>
+            <h5 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white p-8 text-center color-meddoc-dark">Mon profil </h5>
             <img
               className="w-36 h-36 object-cover rounded-full mb-2"
               src={selectedImage ? URL.createObjectURL(selectedImage) : URL_image}
               alt={selectedImage ? 'Selected' : 'Default'}
             />
 
-            <label htmlFor="upload-image" className="cursor-pointer absolute bottom-0 left-24 transform translate-y-1/4 h-12 w-12">
+            <label htmlFor="upload-image" className="cursor-pointer absolute bottom-0 right-center transform translate-y-1/4 translate-x-10 h-12 w-12">
               <img className="" src={image_add} alt="AddImage" />
               <input
                 type="file"
@@ -691,8 +693,8 @@ export default function UserSetting() {
 
         <div class="max-w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 
-          <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Liste de mes proches</h5>
-          <button id="defaultModalButton" onClick={add_proche_modal} class="inline-flex items-center my-4 mx-12 px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+          <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white color-meddoc-dark">Liste de mes proches</h5>
+          <button id="defaultModalButton" onClick={add_proche_modal} class="inline-flex items-center my-4 mx-12 px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 meddoc-blue">
             Ajouter un proche
           </button>
           {/* -------------------------------Ajouter proche modal ----------------------------- */}
@@ -711,7 +713,7 @@ export default function UserSetting() {
                     Ajout d'un proche
                   </h3>
                   <button type="button" onClick={close_modal_add} class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="defaultModal">
-                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z meddoc-orange" clip-rule="evenodd"></path></svg>
                     <span class="sr-only">Close modal</span>
                   </button>
                 </div>
@@ -777,7 +779,7 @@ export default function UserSetting() {
 
 
                     </div>
-                    <button type="submit" onClick={onSubmit_add_relative} class="text-white inline-flex items-center bg-blue-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                    <button type="submit" onClick={onSubmit_add_relative} class="text-white inline-flex items-center bg-blue-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 meddoc-blue">
                       <svg class="mr-1 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
                       Ajouter un proche
                     </button>
@@ -865,7 +867,7 @@ export default function UserSetting() {
 
 
                       </div>
-                      <button type="submit" onClick={onSubmit_edit_relative} class="text-white inline-flex items-center bg-blue-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                      <button type="submit" onClick={onSubmit_edit_relative} class="text-white inline-flex items-center bg-blue-700 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 meddoc-blue">
                         <svg class="mr-1 -ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
                         Modifier un proche
                       </button>

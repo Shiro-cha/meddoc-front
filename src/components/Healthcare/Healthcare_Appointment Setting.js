@@ -21,6 +21,8 @@ import { fr } from 'date-fns/locale';
 import Errormessage, { toast } from '../Toast/Toast';
 import Swal from 'sweetalert2';
 
+import "../../assets/css/login/form.css"
+
 
 
 
@@ -539,7 +541,7 @@ export default function HealthcareAppointmentsSetting() {
                     style={{ cursor: 'pointer' }
                     }
                 >
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                    <svg class="w-6 h-6 color-meddoc-orange" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
                         <path d="M12.687 14.408a3.01 3.01 0 0 1-1.533.821l-3.566.713a3 3 0 0 1-3.53-3.53l.713-3.566a3.01 3.01 0 0 1 .821-1.533L10.905 2H2.167A2.169 2.169 0 0 0 0 4.167v11.666A2.169 2.169 0 0 0 2.167 18h11.666A2.169 2.169 0 0 0 16 15.833V11.1l-3.313 3.308Zm5.53-9.065.546-.546a2.518 2.518 0 0 0 0-3.56 2.576 2.576 0 0 0-3.559 0l-.547.547 3.56 3.56Z" />
                         <path d="M13.243 3.2 7.359 9.081a.5.5 0 0 0-.136.256L6.51 12.9a.5.5 0 0 0 .59.59l3.566-.713a.5.5 0 0 0 .255-.136L16.8 6.757 13.243 3.2Z" />
                     </svg>
@@ -549,7 +551,7 @@ export default function HealthcareAppointmentsSetting() {
                 <button
                     onClick={deleteSetting}
                     style={{ cursor: 'pointer' }}
-                    className='mr-2'
+                    className='mr-2 meddoc-blue'
                 >
                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h16M7 8v8m4-8v8M7 1h4a1 1 0 0 1 1 1v3H6V2a1 1 0 0 1 1-1ZM3 5h12v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5Z" />
@@ -588,7 +590,7 @@ export default function HealthcareAppointmentsSetting() {
                         <h2 className="text-2xl font-bold mb-4" >Modifier:</h2>
                         <p ref={errRef} className={errMsg ? "errmsg text-red-400 border border-red-300 block w-full p-2.5 rounded ring-red-300" : "offscreen"} aria-live="assertive">{errMsg}</p>
 
-                        <form onSubmit={modification_submit}>
+                        <form onSubmit={modification_submit} id="login-form">
 
                             <div className="flex flex-col space-y-4">
                                 <div className="flex flex-col">
@@ -681,7 +683,7 @@ export default function HealthcareAppointmentsSetting() {
                     onSubmit={onSubmitAverage}
                     noValidate>
                     <div>
-                        <label for="average_time" className='mr-2'>
+                        <label for="average_time" className='mr-2 color-meddoc-dark'>
                             Temps de rendez-vous en moyenne :
                         </label>
 
@@ -713,12 +715,12 @@ export default function HealthcareAppointmentsSetting() {
                             (pas obligatoire)
                         </label>
                     </div> */}
-                    <button type="submit" class="text-white bg-blue-600 my-4 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Valider</button>
+                    <button type="submit" class="text-white bg-blue-600 my-4 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 meddoc-blue">Valider</button>
 
                 </form>
 
                 <hr className='border'></hr>
-                <h1 className='text-xl font-semibold items-center py-4'>Parametres hebdomadaire du rendez-vous:</h1>
+                <h1 className='text-xl font-semibold items-center py-4 color-meddoc-blue title-meddoc'>Parametres hebdomadaire du rendez-vous:</h1>
 
                 <div class="flex items-center pl-4 w-auto rounded dark:border-gray-700">
 
@@ -727,12 +729,12 @@ export default function HealthcareAppointmentsSetting() {
                         type="checkbox"
                         value=""
                         name="bordered-checkbox"
-                        className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 dark:checked:bg-blue-600 dark:checked:border-blue-600"
                         onChange={handleSelectAllChange}
                         checked={areAllChecked}
                     >
                     </input>
-                    <label for="select_all" class="w-full py-4 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Tous selectionés</label>
+                    <label for="select_all" class="w-full py-4 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 color-meddoc-dark">Tous selectionés</label>
 
                 </div>
 
@@ -746,22 +748,22 @@ export default function HealthcareAppointmentsSetting() {
                             {daysListWeek.map((day, index) => (
 
                                 <div className='my-4'>
-                                    <label class="relative inline-flex items-center cursor-pointer" >
+                                    <label class="relative inline-flex items-center cursor-pointer color-meddoc-dark" >
                                         <input
                                             type="checkbox"
                                             checked={checkedDays[day]}
                                             onChange={() => handleCheckboxChange(day)}
                                             key={index + 1}
-                                            class="sr-only peer">
+                                            class="sr-only peer meddoc-blue">
                                         </input>
-                                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:meddoc-blue meddoc-dark"></div>
                                         <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">{day}</span>
                                     </label>
                                 </div>
                             ))}
                             <div className='flex'>
                                 <div>
-                                    <label for="start time" className='mr-2'>
+                                    <label for="start time" className='mr-2 color-meddoc-dark'>
                                         Heure de debut :
                                     </label>
                                     <input
@@ -777,7 +779,7 @@ export default function HealthcareAppointmentsSetting() {
                                 </div>
 
                                 <div>
-                                    <label for="end_time" className='mr-2'>
+                                    <label for="end_time" className='mr-2 color-meddoc-dark'>
                                         Heure de fin :
                                     </label>
 
@@ -792,7 +794,7 @@ export default function HealthcareAppointmentsSetting() {
                                         onChange={handleEndTimeChange}></input>
                                 </div>
                             </div>
-                            <button type="submit" class="text-white bg-blue-600 my-4 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Confirmer</button>
+                            <button type="submit" class="text-white bg-blue-600 my-4 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 meddoc-blue">Confirmer</button>
 
                         </form>
 
