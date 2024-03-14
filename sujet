@@ -1,0 +1,6 @@
+***Mini jeu***
+Vous avez 4 essai en lancant 3 des en meme temps pour pour données 421.
+Le programme lance les des et afficher 421
+
+on afficher gané si oui on afficher "Gagné" si non on demande à l'utilisateur d'appyuer sur R pour relancer. Au bout de 4emme essai, au lieu de proposer la relance on affciherara "Perdu" et le programme se termine
+

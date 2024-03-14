@@ -11,7 +11,7 @@ const URL_INFOS_USER = "/"
 const BloodGroupRadio = ({ options, selected, onChange }) => {
   return (
     <div className="col-span-1 flex flex-col px-6 py-3">
-      <ul className="border-blue-500 bg-blue-500 group flex-1 -skew-x-[-30deg] transform border">
+      <ul className="meddoc-blue group flex-1 -skew-x-[-30deg] transform">
         <li className="skew-x-[-30deg] transform bg-transparent px-9 text-left first-letter:uppercase">
           <b className="block text-lg ">Groupe sanguin </b>
         </li>
@@ -25,7 +25,7 @@ const BloodGroupRadio = ({ options, selected, onChange }) => {
             name="blood-group-radio"
             checked={selected === option.id}
             onChange={() => onChange(option.id)}
-            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            className="w-4 h-4 text-orange-400 bg-gray-100 border-gray-300 focus:ring-orange-400 dark:focus:ring-orange-400 dark:ring-offset-gray-800 focus:orange-2 dark:bg-gray-700 dark:border-gray-600"
           />
           <label htmlFor={`blood-group-radio-${option.id}`} className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
             {option.label}
@@ -48,7 +48,7 @@ export const CheckboxList = ({ data, onChange }) => {
               type="checkbox"
               checked={item.checked}
               onChange={(e) => onChange(item.id, e.target.checked)}
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              className="w-4 h-4 text-orange-400 bg-gray-100 border-gray-300 focus:ring-orange-400 dark:focus:ring-orange-400 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
             />
             <label htmlFor={item.id} className="w-full py-3 ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">
               {item.label}
@@ -285,7 +285,7 @@ export default function BookHealth() {
               <input type="text" name="Nom" id="Nom" defaultValue={fullname} className="w-full text-sm text-gray-900 bg-transparent border-0  border-gray-300 appearance-none dark:text-white dark:border-gray-600  focus:outline-none focus:ring-0" placeholder=" " required />
             </div> */}
             <div class=" col-span-1 flex flex-col px-6 py-3">
-              <ul class="border-blue-500 bg-blue-500 group flex-1 -skew-x-[-30deg] transform border">
+              <ul class="meddoc-blue group flex-1 -skew-x-[-30deg] transform border">
                 <li class=" skew-x-[-30deg] transform bg-transparent px-9 text-left first-letter:uppercase">
                   <b class="block text-lg ">Nom et prenoms</b>
                 </li>
@@ -297,7 +297,7 @@ export default function BookHealth() {
             </div>
 
             <div className="col-span-1 flex flex-col px-6 py-3">
-              <ul class="border-blue-500 bg-blue-500 group flex-1 -skew-x-[-30deg] transform border">
+              <ul class="meddoc-blue group flex-1 -skew-x-[-30deg] transform border">
                 <li class=" skew-x-[-30deg] transform bg-transparent px-9 text-left first-letter:uppercase">
                   <b class="block text-lg ">Date de naissance </b>
                 </li>
@@ -317,7 +317,7 @@ export default function BookHealth() {
           <div className="grid grid-cols-2 gap-0 m-4">
 
             <div className="col-span-1 flex flex-col px-6 py-3 ">
-              <ul class="border-blue-500 bg-blue-500 group flex-1 -skew-x-[-30deg] transform border">
+              <ul class="meddoc-blue group flex-1 -skew-x-[-30deg] transform border">
                 <li class=" skew-x-[-30deg] transform bg-transparent px-9 text-left first-letter:uppercase">
                   <b class="block text-lg ">Contact </b>
                 </li>
@@ -329,7 +329,7 @@ export default function BookHealth() {
             </div>
 
             <div className="col-span-1 flex flex-col px-6 py-3 ">
-              <ul class="border-blue-500 bg-blue-500 group flex-1 -skew-x-[-30deg] transform border">
+              <ul class="meddoc-blue group flex-1 -skew-x-[-30deg] transform border">
                 <li class=" skew-x-[-30deg] transform bg-transparent px-9 text-left first-letter:uppercase">
                   <b class="block text-lg ">Contact d'urgence </b>
                 </li>
@@ -347,17 +347,17 @@ export default function BookHealth() {
           <div className="grid grid-cols-1 gap-0 m-4">
             {/* SEX */}
             <div className="col-span-1 flex flex-col px-6 py-3 ">
-              <ul class="border-blue-500 bg-blue-500 group flex-1 -skew-x-[-30deg] transform border">
+              <ul class="meddoc-blue group flex-1 -skew-x-[-30deg] transform border">
                 <li class=" skew-x-[-30deg] transform bg-transparent px-9 text-left first-letter:uppercase">
                   <b class="block text-lg ">Sex </b>
                 </li>
               </ul>
               <div class="flex items-center m-4">
-                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-orange-400 bg-gray-100 border-gray-300 focus:orange-blue-400 dark:focus:orange-blue-400 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                 </input> <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Homme</label>
               </div>
               <div class="flex items-center m-4">
-                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                <input checked id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-orange-400 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
                 </input> <label for="default-radio-2" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Femme</label>
               </div>
 
@@ -378,7 +378,7 @@ export default function BookHealth() {
           <div className="grid grid-cols-1 gap-0 m-4">
             {/* MALADIE CHRONIQUE */}
             <div className="col-span-1 flex flex-col px-6 py-3 ">
-              <ul class="border-blue-500 bg-blue-500 group flex-1  border text-left">
+              <ul class="meddoc-blue group flex-1  border text-left">
                 <li class="bg-transparent px-9 text-left first-letter:uppercase">
                   <b class="block text-lg ">Maladie chronique </b>
                 </li>
@@ -398,7 +398,7 @@ export default function BookHealth() {
           <div className="grid grid-cols-1 gap-0 m-4">
 
             <div className="col-span-1 flex flex-col px-6 py-3 ">
-              <ul class="border-blue-500 bg-blue-500 group flex-1  border">
+              <ul class="meddoc-blue group flex-1  border">
                 <li class="bg-transparent px-9 text-left first-letter:uppercase">
                   <b class="block text-lg ">Antécedants familiaux </b>
                 </li>
@@ -418,7 +418,7 @@ export default function BookHealth() {
           <div className="grid grid-cols-1 gap-0 m-4">
 
             <div className="col-span-1 flex flex-col px-6 py-3 ">
-              <ul class="border-blue-500 bg-blue-500 group flex-1  border">
+              <ul class="meddoc-blue group flex-1  border">
                 <li class="bg-transparent px-9 text-left first-letter:uppercase">
                   <b class="block text-lg ">Alérgies </b>
                 </li>
@@ -436,7 +436,7 @@ export default function BookHealth() {
           <div className="grid grid-cols-1 gap-0 m-4">
 
             <div className="col-span-1 flex flex-col px-6 py-3 ">
-              <ul class="border-blue-500 bg-blue-500 group flex-1  border">
+              <ul class="meddoc-blue group flex-1  border">
                 <li class="bg-transparent px-9 text-left first-letter:uppercase">
                   <b class="block text-lg ">Intolérance alimentaires </b>
                 </li>
@@ -452,7 +452,7 @@ export default function BookHealth() {
           </div>
           <div className="grid grid-cols-1 gap-0 m-4">
             <div className="col-span-1 flex flex-col px-6 py-3 ">
-              <ul class="border-blue-500 bg-blue-500 group flex-1  border">
+              <ul class="meddoc-blue group flex-1  border">
                 <li class="bg-transparent px-9 text-left first-letter:uppercase">
                   <b class="block text-lg ">Vacinations </b>
                 </li>
@@ -469,7 +469,7 @@ export default function BookHealth() {
 
           <div className="flex items-center justify-between w-full mx-10">
             <div className="">
-              <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">TERMINER</button>
+              <button type="submit" class="text-white meddoc-orange  focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2  focus:outline-none">TERMINER</button>
             </div>
           </div>
 

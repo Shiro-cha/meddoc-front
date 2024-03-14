@@ -19,7 +19,7 @@ export default function Footer() {
                 <div class="mx-auto w-full p-4 py-6 lg:py-8">
                     <div class="md:flex md:justify-between">
                         <div class="mb-6 md:mb-0">
-                            <a href="#" class="flex items-center">
+                            <a href="/" class="flex items-center">
                                 <img src={logo} class="w-1/3 mr-3" alt="Meddoc Logo" />
                             </a>
                             <p className="color-meddoc-dark weight-normal font-meddoc-normal">

@@ -1,13 +1,10 @@
 import About from "./LandingPageContent/AboutUs";
 import Whyus from "./LandingPageContent/WhyUS";
 import Sponsoring from "./LandingPageContent/Sponsoring";
-import TimeLine from "./LandingPageContent/TimeLine";
 import doctor_illustration from "../assets/illustration/Doctor Character Illustration.svg";
 import Subscribe from "./LandingPageContent/Concact_us";
-import UserHero from "./User/User_hero";
-import { Navigate, createSearchParams, useNavigate } from "react-router-dom";
+import {  createSearchParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { FormProvider, useForm } from "react-hook-form";
 
 //custom style
 import "../assets/css/home/section.css"

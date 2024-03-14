@@ -3,14 +3,37 @@ import { FaGraduationCap, FaLightbulb, FaUserMd, FaHeartbeat, FaMedkit, FaChalkb
 
 export default function NosService() {
     const services = [
-        { icon: <FaChalkboardTeacher />, title: "E-learning", description: "Formation en ligne accessible à tout moment. Apprenez de manière interactive avec des modules de cours dynamiques et des exercices pratiques. Nos experts vous guideront tout au long de votre parcours d'apprentissage, vous permettant de développer de nouvelles compétences à votre propre rythme." },
-        { icon: <FaLightbulb />, title: "Conseil", description: "Conseils personnalisés pour vos besoins en santé. Nos conseillers experts en santé sont là pour vous fournir des conseils adaptés à vos besoins spécifiques. Que ce soit pour des questions de bien-être, de nutrition ou de gestion du stress, nous sommes là pour vous aider à prendre des décisions éclairées pour votre santé." },
-        { icon: <FaUserMd />, title: "Télémédecine", description: "Consultations médicales à distance avec des professionnels de la santé. Accédez à des consultations médicales en ligne avec nos médecins qualifiés. Obtenez des conseils médicaux, des ordonnances et un suivi personnalisé, le tout depuis le confort de votre domicile. La télémédecine rend les soins de santé accessibles et pratiques." },
-        { icon: <FaHeartbeat />, title: "Santé Digitale", description: "Solutions numériques pour promouvoir la santé. Explorez notre gamme de solutions numériques axées sur la santé, des applications de suivi de la condition physique aux outils de gestion du stress. Utilisez la technologie pour améliorer votre bien-être global et adopter un mode de vie sain." },
-        { icon: <FaMedkit />, title: "Formation Médicale Continue", description: "Cours et formations pour le personnel médical. Offrez à votre personnel médical des opportunités de formation continue. Nos programmes de formation médicale couvrent une variété de sujets, du perfectionnement professionnel aux dernières avancées médicales. Investissez dans l'éducation de votre équipe pour des soins de qualité." },
-        { icon: <FaCalendarAlt />, title: "Événementiels", description: "Organisation d'événements, congrès et séminaires médicaux. Planifiez et organisez des événements médicaux mémorables. Des congrès internationaux aux séminaires spécialisés, nous facilitons la création d'expériences enrichissantes pour les professionnels de la santé et le grand public." },
-        { icon: <FaHandsHelping />, title: "Accompagnement", description: "Soutien et accompagnement dans votre parcours de santé. Nous comprenons que chaque parcours de santé est unique. Nos experts en accompagnement vous guideront tout au long de votre parcours, vous fournissant un soutien personnalisé et des ressources adaptées à vos besoins spécifiques." },
-        { icon: <FaUserMd />, title: "Social Media", description: "Gestion de la présence sur les réseaux sociaux pour une meilleure communication. Optimisez votre présence en ligne avec nos services de gestion des médias sociaux. Des campagnes engageantes aux analyses de données, nous vous aidons à construire une communauté en ligne et à renforcer la communication avec votre audience." },
+        { icon: <FaChalkboardTeacher />, 
+        title: "E-learning", 
+        description: "Formation en ligne accessible à tout moment. Apprenez de manière interactive avec des modules de cours dynamiques et des exercices pratiques. Nos experts vous guideront tout au long de votre parcours d'apprentissage, vous permettant de développer de nouvelles compétences à votre propre rythme." },
+        
+        { icon: <FaLightbulb />, 
+        title: "Conseil", 
+        description: "Conseils personnalisés pour vos besoins en santé. Nos conseillers experts en santé sont là pour vous fournir des conseils adaptés à vos besoins spécifiques. Que ce soit pour des questions de bien-être, de nutrition ou de gestion du stress, nous sommes là pour vous aider à prendre des décisions éclairées pour votre santé." },
+        
+        { icon: <FaUserMd />, 
+        title: "Télémédecine", 
+        description: "Consultations médicales à distance avec des professionnels de la santé. Accédez à des consultations médicales en ligne avec nos médecins qualifiés. Obtenez des conseils médicaux, des ordonnances et un suivi personnalisé, le tout depuis le confort de votre domicile. La télémédecine rend les soins de santé accessibles et pratiques." },
+        
+        { icon: <FaHeartbeat />, 
+        title: "Santé Digitale", 
+        description: "Solutions numériques pour promouvoir la santé. Explorez notre gamme de solutions numériques axées sur la santé, des applications de suivi de la condition physique aux outils de gestion du stress. Utilisez la technologie pour améliorer votre bien-être global et adopter un mode de vie sain." },
+        
+        { icon: <FaMedkit />, 
+        title: "Formation Médicale Continue", 
+        description: "Cours et formations pour le personnel médical. Offrez à votre personnel médical des opportunités de formation continue. Nos programmes de formation médicale couvrent une variété de sujets, du perfectionnement professionnel aux dernières avancées médicales. Investissez dans l'éducation de votre équipe pour des soins de qualité." },
+        
+        { icon: <FaCalendarAlt />, 
+        title: "Événementiels", 
+        description: "Organisation d'événements, congrès et séminaires médicaux. Planifiez et organisez des événements médicaux mémorables. Des congrès internationaux aux séminaires spécialisés, nous facilitons la création d'expériences enrichissantes pour les professionnels de la santé et le grand public." },
+        
+        { icon: <FaHandsHelping />, 
+        title: "Accompagnement", 
+        description: "Soutien et accompagnement dans votre parcours de santé. Nous comprenons que chaque parcours de santé est unique. Nos experts en accompagnement vous guideront tout au long de votre parcours, vous fournissant un soutien personnalisé et des ressources adaptées à vos besoins spécifiques." },
+        
+        { icon: <FaUserMd />, 
+        title: "Social Media", 
+        description: "Gestion de la présence sur les réseaux sociaux pour une meilleure communication. Optimisez votre présence en ligne avec nos services de gestion des médias sociaux. Des campagnes engageantes aux analyses de données, nous vous aidons à construire une communauté en ligne et à renforcer la communication avec votre audience." },
       ];
 
   const [modalContent, setModalContent] = useState({ title: "", description: "" });
