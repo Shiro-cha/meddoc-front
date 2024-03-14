@@ -43,7 +43,7 @@ export default function Whyus() {
             <div
               key={item.id}
               className={`flex flex-col p-4 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 ${
-                item.id % 3 === 0 ? "lg:mt-16" : ""
+                item.id % 2 === 0 ? "lg:mt-16" : ""
               }`}
             >
               <Link to={item.link} className="w-full meddoc-orange">
