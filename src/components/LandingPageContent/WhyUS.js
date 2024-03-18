@@ -37,7 +37,7 @@ export default function Whyus() {
   return (
     <section id="why-us" className="why-us">
     <h1 className="title-meddoc color-meddoc-dark mt-5">C'est simple, rapide et gratuit</h1>
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 lg:p-16 justify-center items-center">
+      <div className="grid grid-cols-2 gap-6 lg:grid-cols-4 lg:p-16 justify-center items-center">
         {items.map((item, index) => (
           (
             <div
@@ -51,7 +51,7 @@ export default function Whyus() {
                   {item.icon}
                 </div>
               </Link>
-              <p className="mb-3 p-4 font-normal text-gray-700 dark:text-gray-400 text-justify flex items-center" style={{height:"200px",fontSize:20}}>
+              <p className="mb-3 p-4 font-normal text-gray-700 dark:text-gray-400 text-left flex items-center" style={{height:"200px",fontSize:20}}>
                 {item.description}
               </p>
             </div>

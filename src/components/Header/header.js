@@ -39,18 +39,18 @@ export default function Header() {
         <div className="flex  items-center justify-start gap-3">
             <div className="flex items-center space-x-2">
           <FaPhone />
-          <a className="color-meddoc-dark" href="tel:123-456-7890">123-456-7890</a>
+          <a className="color-meddoc-dark" href="tel: (+261) 32 65 031 58" target="_blank">(+261) 32 65 031 58</a>
             </div>
             <div className="flex items-center space-x-2">
               <FaEnvelope />
-              <a className="color-meddoc-dark" href="mailto:contact@meddoc.mg">contact@meddoc.mg</a>
+              <a className="color-meddoc-dark" href="mailto:contact@meddoc.mg" target="_blank">contact@meddoc.mg</a>
             </div>
         </div>
         <div className="flex items-center space-x-2 gap-2">
           
-          <a href="https://www.linkedin.com" className="color-meddoc-dark"><FaLinkedin /></a>
-          <a href="https://www.linkedin.com" className="color-meddoc-dark"><FaFacebook /></a>
-          <a href="https://www.linkedin.com" className="color-meddoc-dark"><FaTwitter /></a>
+          <a href="https://www.linkedin.com" className="color-meddoc-dark" target="_blank"><FaLinkedin /></a>
+          <a href="https://www.facebook.com" className="color-meddoc-dark" target="_blank"><FaFacebook /></a>
+          <a href="https://www.twitter.com" className="color-meddoc-dark" target="_blank"><FaTwitter /></a>
         </div>
       </div>
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-4 dark:bg-gray-800 min-h-[68px]">
