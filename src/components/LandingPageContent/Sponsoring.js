@@ -23,7 +23,7 @@ export default function Sponsoring() {
     [AAL, AWS, emc],
     [fiaro, gsps,incubeme],
     [hackama, miary, Orange ],
-    [poesam, sprint, Zafitody ]// Second slide with remaining partners
+    [poesam, sprint, Zafitody ]
   ];
 
   return (
@@ -33,7 +33,7 @@ export default function Sponsoring() {
       </div>
       <div>
         <Swiper
-          spaceBetween={30} // Increase space between slides
+          spaceBetween={30}
           centeredSlides={true}
           autoplay={{
             delay: 2500,
@@ -44,17 +44,17 @@ export default function Sponsoring() {
           }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper lg:w-3/4" // Adjust width of Swiper
+          className="mySwiper lg:w-3/4"
         >
           {image_slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="flex justify-center items-center">
+              <div className="flex justify-center items-center" style={{ height: '200px' }}> {/* Adjust height as needed */}
                 {slide.map((partner, partnerIndex) => (
                   <img
                     key={partnerIndex}
                     src={partner}
                     alt={`Partner ${index}-${partnerIndex}`}
-                    className="m-4" // Add margin around each partner
+                    className="m-4 h-full object-cover" // Add object-cover to ensure the image covers the container
                   />
                 ))}
               </div>
