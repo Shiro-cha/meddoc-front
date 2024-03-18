@@ -32,8 +32,8 @@ const AreUPro = () => {
       </h2>
       <div className="grid grid-cols-2 gap-4">
         {cards.map((card) => (
-          <div key={card.id} className="timeline-item shadow">
-            <div className="flex items-center gap-4" style={{height:100,width:400}}>
+          <div key={card.id} className="timeline-item">
+            <div className="flex items-center gap-4 shadow" style={{height:100,width:400}}>
               <div className="icon">
                 <FaUserMd className="text-4xl text-orange-500" />
               </div>
