@@ -27,7 +27,7 @@ export default function Sponsoring() {
   ];
 
   return (
-    <section className="flex flex-col justify-center" id="presse">
+    <section className="flex flex-col justify-center" id="presse" style={{height:"90vh"}}>
       <div className="text-center text-4xl font-bold mb-10">
         <h2 className="title-meddoc color-meddoc-dark">Nos partenaires</h2>
       </div>
