@@ -26,11 +26,11 @@ const AreUPro = () => {
   ];
 
   return (
-    <section className="are-u-pro mx-auto flex flex-col items-center" style={{width:"90%",height:"90vh"}}>
+    <section className="are-u-pro mx-auto flex flex-col items-center" style={{width:"90%",height:"80vh"}}>
       <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 dark:text-gray-200 mb-4  title-meddoc color-meddoc-dark">
         Êtes-vous un professionnel de santé ? 
       </h2>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-16">
         {cards.map((card) => (
           <div key={card.id} className="timeline-item">
             <div className="flex items-center gap-4 shadow" style={{height:100,width:400}}>
