@@ -46,7 +46,7 @@ export default function Whyus() {
                 item.id % 2 === 0 ? "lg:mt-16" : ""
               }`}
             >
-              <Link to={item.link} className="w-full meddoc-orange flex items-center justify-center opacity-50" style={{height:"150px"}}>
+              <Link to={item.link} className="w-full meddoc-orange flex items-center justify-center opacity-80" style={{height:"150px"}}>
                 <div className="w-16 h-16  rounded-full flex items-center justify-center">
                   {item.icon}
                 </div>

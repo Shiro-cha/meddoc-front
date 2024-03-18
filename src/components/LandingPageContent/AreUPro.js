@@ -32,7 +32,7 @@ const AreUPro = () => {
       </h2>
       <div className="row">
         {cards.map((card) => (
-          <div key={card.id} className="col-lg-6 mb-4">
+          <div key={card.id} >
             <div className="card shadow-sm p-3">
               <div className="card-body">
                 <div className="icon">
