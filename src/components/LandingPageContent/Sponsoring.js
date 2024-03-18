@@ -46,6 +46,7 @@ export default function Sponsoring() {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper lg:w-3/4"
         >
+        <div className="container mx-auto">
           {image_slides.map((slide, index) => (
             <SwiperSlide key={index}>
               <div className="flex justify-center items-center" style={{ height: '200px' }}> {/* Adjust height as needed */}
@@ -54,12 +55,13 @@ export default function Sponsoring() {
                     key={partnerIndex}
                     src={partner}
                     alt={`Partner ${index}-${partnerIndex}`}
-                    className="m-4 h-full object-cover" // Add object-cover to ensure the image covers the container
+                    className="m-4 h-full w-auto max-w-100 object-contain" // Add object-contain to ensure the image fits within the container
                   />
                 ))}
               </div>
             </SwiperSlide>
           ))}
+          </div>
         </Swiper>
       </div>
     </section>
