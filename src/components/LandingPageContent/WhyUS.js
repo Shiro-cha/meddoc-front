@@ -6,28 +6,28 @@ const items = [
   {
     id: 2,
     link: "/e-learning",
-    icon: <FaCalendarAlt size={30}/>,
+    icon: <FaCalendarAlt size={40}/>,
     description:
       "Trouvez la disponibilité de tous nos praticiens en un coup d'œil.",
   },
   {
     id: 3,
     link: "/conseil-soignant",
-    icon: <FaBook size={30}/>,
+    icon: <FaBook size={40}/>,
     description:
       "Réservez vos rendez-vous à tout moment, où que vous soyez, 24h/24 et 7j/7.",
   },
   {
     id: 4,
     link: "/conseil-soignant",
-    icon: <FaMobileAlt size={30}/>,
+    icon: <FaMobileAlt size={40}/>,
     description:
       "Rappelez-vous tous vos rendez-vous grâce aux rappels SMS envoyés à l'avance.",
   },
   {
     id: 5,
     link: "/conseil-soignant",
-    icon: <FaUserCog size={30}/>,
+    icon: <FaUserCog size={40}/>,
     description:
       "Gérez, déplacez ou annulez facilement vos rendez-vous.",
   },
@@ -46,7 +46,7 @@ export default function Whyus() {
                 item.id % 2 === 0 ? "lg:mt-16" : ""
               }`}
             >
-              <Link to={item.link} className="w-full meddoc-orange flex items-center justify-center" style={{height:"120px"}}>
+              <Link to={item.link} className="w-full meddoc-orange flex items-center justify-center opacity-50" style={{height:"150px"}}>
                 <div className="w-16 h-16  rounded-full flex items-center justify-center">
                   {item.icon}
                 </div>
