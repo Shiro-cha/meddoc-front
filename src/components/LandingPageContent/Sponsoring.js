@@ -55,7 +55,7 @@ export default function Sponsoring() {
                     key={partnerIndex}
                     src={partner}
                     alt={`Partner ${index}-${partnerIndex}`}
-                    className="m-4 h-full w-auto max-w-100 object-contain" // Add object-contain to ensure the image fits within the container
+                    className="m-4 h-auto object-contain" style={{width:"100px"}}
                   />
                 ))}
               </div>
