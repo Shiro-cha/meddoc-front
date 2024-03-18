@@ -35,20 +35,22 @@ export default function Header() {
 
   return (
     <header className='sticky top-0 z-[100] shadow'>
-     {/* <div className="bg-gray-200 text-gray-600 py-2 px-4 flex items-center justify-center gap-3">
-        <div className="flex items-center space-x-2">
+     <div className="bg-gray-200 text-gray-600 py-2 px-4 flex items-center justify-center gap-3">
+        <div>
+            <div className="flex items-center space-x-2">
           <FaPhone />
           <a className="color-meddoc-dark" href="tel:123-456-7890">123-456-7890</a>
+            </div>
+            <div className="flex items-center space-x-2">
+              <FaEnvelope />
+              <a className="color-meddoc-dark" href="mailto:contact@meddoc.mg">contact@meddoc.mg</a>
+            </div>
         </div>
         <div className="flex items-center space-x-2">
-          <FaEnvelope />
-          <a className="color-meddoc-dark" href="mailto:contact@meddoc.mg">contact@meddoc.mg</a>
+          
+          <a href="https://www.linkedin.com" className="color-meddoc-dark"><FaLinkedin /></a>
         </div>
-        <div className="flex items-center space-x-2">
-          <FaLinkedin />
-          <a href="https://www.linkedin.com" className="color-meddoc-dark">Meddoc</a>
-        </div>
-      </div>*/}
+      </div>
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-4 dark:bg-gray-800 min-h-[68px]">
         <div className="lg:flex justify-between items-center mx-auto ">
           <Link className="mr-3 h-6 sm:h-9 flex items-center w-[160px] sm:max-w-[180px]" to='/'>

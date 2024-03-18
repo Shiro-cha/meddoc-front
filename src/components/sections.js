@@ -136,9 +136,7 @@ export function Section() {
                 </a> */}
                 <SearchBar defaultvalues={{ healhtpro_name: '', healhtpro_localisation: '' }}></SearchBar>
             </div>
-            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                <img src={doctor_illustration} alt="mockup"></img>
-            </div>
+            
         </div>
 
             </section>
