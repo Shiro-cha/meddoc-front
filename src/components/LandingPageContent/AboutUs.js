@@ -10,7 +10,7 @@ const PrivacyPolicy = () => {
   );
 
   return (
-    <section id="privacy-policy" className="privacy-policy" style={{height:"90vh"}}>
+    <section id="privacy-policy" className="privacy-policy flex col items-center justify-center" style={{height:"90vh"}}>
       <div className="container flex flex-col lg:flex-row items-center justify-center lg:space-x-8 py-8 lg:p-16">
         <div className="flex items-center justify-center w-24 h-24 bg-orange-300 rounded-full">
           <FaLock className="w-12 h-12 text-white" />
