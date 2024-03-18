@@ -35,8 +35,8 @@ export default function Header() {
 
   return (
     <header className='sticky top-0 z-[100] shadow'>
-     <div className="bg-gray-200 text-gray-600 py-2 px-4 flex row space-between items-center justify-center gap-3">
-        <div>
+     <div className="bg-gray-200 text-gray-600 py-2 px-4 flex  items-center justify-between gap-3">
+        <div className="flex  items-center justify-start">
             <div className="flex items-center space-x-2">
           <FaPhone />
           <a className="color-meddoc-dark" href="tel:123-456-7890">123-456-7890</a>
