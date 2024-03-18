@@ -2,7 +2,7 @@
 import { DarkThemeToggle, Flowbite, Dropdown } from 'flowbite-react';
 import { Outlet, Link, useLocation } from "react-router-dom";
 import logo from "../../assets/image/logo.png";
-import { FaPhone, FaEnvelope, FaLinkedin } from 'react-icons/fa'; // Importing icons
+import { FaPhone, FaEnvelope, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa'; // Importing icons
 
 export default function Header() {
 
@@ -36,7 +36,7 @@ export default function Header() {
   return (
     <header className='sticky top-0 z-[100] shadow'>
      <div className="bg-gray-200 text-gray-600 py-2 px-4 flex  items-center justify-between gap-3">
-        <div className="flex  items-center justify-start">
+        <div className="flex  items-center justify-start gap-3">
             <div className="flex items-center space-x-2">
           <FaPhone />
           <a className="color-meddoc-dark" href="tel:123-456-7890">123-456-7890</a>
@@ -46,9 +46,11 @@ export default function Header() {
               <a className="color-meddoc-dark" href="mailto:contact@meddoc.mg">contact@meddoc.mg</a>
             </div>
         </div>
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2 gap-2">
           
           <a href="https://www.linkedin.com" className="color-meddoc-dark"><FaLinkedin /></a>
+          <a href="https://www.linkedin.com" className="color-meddoc-dark"><FaFacebook /></a>
+          <a href="https://www.linkedin.com" className="color-meddoc-dark"><FaTwitter /></a>
         </div>
       </div>
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-4 dark:bg-gray-800 min-h-[68px]">
