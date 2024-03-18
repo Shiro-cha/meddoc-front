@@ -10,6 +10,13 @@ import Orange from '../../assets/partenaires/orangefab.png';
 import Zafitody from '../../assets/partenaires/zafitody.png';
 import incubeme from '../../assets/partenaires/incubeme.png';
 import usaid from '../../assets/partenaires/usaid.png';
+import emc from '../../assets/partenaires/emc.jpg';
+import fiaro from '../../assets/partenaires/fiaro.png';
+import hackama from '../../assets/partenaires/Hack@ma.png';
+import gsps from '../../assets/partenaires/Logo GSPS.png';
+import miary from '../../assets/partenaires/miary.jpg';
+import poesam from '../../assets/partenaires/poesam.jpg';
+import sprint from '../../assets/partenaires/sprint.png.png';
 
 export default function Sponsoring() {
   const image_slides = [
