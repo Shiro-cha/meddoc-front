@@ -2,7 +2,7 @@
 import { DarkThemeToggle, Flowbite, Dropdown } from 'flowbite-react';
 import { Outlet, Link, useLocation } from "react-router-dom";
 import logo from "../../assets/image/logo.png";
-import { FaPhone, FaEnvelope, FaLinkedin, FaFacebook, FaTwitter } from 'react-icons/fa'; // Importing icons
+import { FaPhone, FaEnvelope, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa'; // Importing icons
 
 export default function Header() {
 
@@ -48,9 +48,9 @@ export default function Header() {
         </div>
         <div className="flex items-center space-x-2 gap-2">
           
-          <a href="https://www.linkedin.com" className="color-meddoc-dark" target="_blank"><FaLinkedin /></a>
-          <a href="https://www.facebook.com" className="color-meddoc-dark" target="_blank"><FaFacebook /></a>
-          <a href="https://www.twitter.com" className="color-meddoc-dark" target="_blank"><FaTwitter /></a>
+          <a href="https://www.linkedin.com/company/meddochealthcare" className="color-meddoc-dark" target="_blank"><FaLinkedin /></a>
+          <a href="https://www.facebook.com/MEDDOCHC" className="color-meddoc-dark" target="_blank"><FaFacebook /></a>
+          <a href="https://www.instagram.com/meddoc.healthcare" className="color-meddoc-dark" target="_blank"><FaInstagram /></a>
         </div>
       </div>
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-4 dark:bg-gray-800 min-h-[68px]">

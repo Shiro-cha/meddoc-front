@@ -26,19 +26,19 @@ const AreUPro = () => {
   ];
 
   return (
-    <section className="are-u-pro mx-auto" style={{width:"90%"}}>
-      <h2 className="title-meddoc color-meddoc-dark">
+    <section className="are-u-pro mx-auto" style={{width:"90%",height:"90vh"}}>
+      <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 dark:text-gray-200 mb-4  title-meddoc color-meddoc-dark">
         Êtes-vous un professionnel de santé ? 
       </h2>
       <div className="grid grid-cols-2 gap-4">
         {cards.map((card) => (
           <div key={card.id} className="timeline-item shadow">
-            <div className="flex items-center gap-4" style={{height:100}}>
+            <div className="flex items-center gap-4" style={{height:100,width:400}}>
               <div className="icon">
                 <FaUserMd className="text-4xl text-orange-500" />
               </div>
               <div className="content p-4">
-                <p className="color-meddoc-dark">{card.description}</p>
+                <p className="color-meddoc-dark font">{card.description}</p>
               </div>
             </div>
           </div>
