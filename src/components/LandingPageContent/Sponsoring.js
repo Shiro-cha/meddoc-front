@@ -16,14 +16,14 @@ import hackama from '../../assets/partenaires/Hack@ma.png';
 import gsps from '../../assets/partenaires/Logo GSPS.png';
 import miary from '../../assets/partenaires/miary.jpg';
 import poesam from '../../assets/partenaires/poesam.jpg';
-import sprint from '../../assets/partenaires/sprint.png';
+import sprint from '../../assets/partenaires/sprint.png ';
 
 export default function Sponsoring() {
   const image_slides = [
     [AAL, AWS, emc],
     [fiaro, gsps,incubeme],
-    [hackama, miary, orange ],
-    [poesam, sprint, zafitody ]// Second slide with remaining partners
+    [hackama, miary, Orange ],
+    [poesam, sprint, Zafitody ]// Second slide with remaining partners
   ];
 
   return (

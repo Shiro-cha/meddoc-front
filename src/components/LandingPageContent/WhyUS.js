@@ -47,7 +47,7 @@ export default function Whyus() {
               }`}
             >
               <Link to={item.link} className="w-full meddoc-orange flex items-center justify-center" style={{height:"120px"}}>
-                <div className="w-16 h-16 meddoc-blue rounded-full flex items-center justify-center">
+                <div className="w-16 h-16  rounded-full flex items-center justify-center">
                   {item.icon}
                 </div>
               </Link>
