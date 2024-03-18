@@ -26,7 +26,7 @@ const AreUPro = () => {
   ];
 
   return (
-    <section className="are-u-pro mx-auto flex flex-col items-center" style={{width:"90%",height:"80vh"}}>
+    <section className="are-u-pro mx-auto flex flex-col justify-center" style={{width:"90%",height:"80vh"}}>
       <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 dark:text-gray-200 mb-4  title-meddoc color-meddoc-dark">
         Êtes-vous un professionnel de santé ? 
       </h2>
