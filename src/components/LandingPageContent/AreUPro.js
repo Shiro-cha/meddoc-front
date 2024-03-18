@@ -38,7 +38,7 @@ const AreUPro = () => {
                 <FaUserMd className="text-4xl text-orange-500" />
               </div>
               <div className="content p-4">
-                <p className="color-meddoc-dark font">{card.description}</p>
+                <p className="color-meddoc-dark mb-3 p-4 font-normal text-gray-700 dark:text-gray-400 text-left flex items-center">{card.description}</p>
               </div>
             </div>
           </div>
