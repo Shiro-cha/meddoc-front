@@ -26,19 +26,21 @@ const AreUPro = () => {
   ];
 
   return (
-    <section className="are-u-pro">
+    <section className="are-u-pro container">
       <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-8">
         Êtes-vous un professionnel de santé ?
       </h2>
-      <div className="timeline">
+      <div className="row">
         {cards.map((card) => (
-          <div key={card.id} className="timeline-item shadow">
-            <div className="timeline-item-content">
-              <div className="icon">
-                <FaUserMd className="text-4xl text-orange-500" />
-              </div>
-              <div className="content">
-                <p>{card.description}</p>
+          <div key={card.id} className="col-lg-6 mb-4">
+            <div className="card shadow-sm p-3">
+              <div className="card-body">
+                <div className="icon">
+                  <FaUserMd className="text-4xl text-orange-500" />
+                </div>
+                <div className="content">
+                  <p className="color-meddoc-dark">{card.description}</p>
+                </div>
               </div>
             </div>
           </div>
