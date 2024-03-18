@@ -46,7 +46,7 @@ export default function Sponsoring() {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper lg:w-3/4"
         >
-        <div className="mx-auto" style={{width:320}}>
+        <div className="mx-auto" style={{width:520}}>
           {image_slides.map((slide, index) => (
             <SwiperSlide key={index}>
               <div className="flex justify-center items-center" style={{ height: '200px' }}> {/* Adjust height as needed */}
