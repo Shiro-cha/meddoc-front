@@ -30,15 +30,15 @@ const AreUPro = () => {
       <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-8">
         Êtes-vous un professionnel de santé ?
       </h2>
-      <div className="timeline">
+      <div className="grid grid-cols-2 gap-4">
         {cards.map((card) => (
           <div key={card.id} className="timeline-item shadow">
-            <div className="timeline-item-content">
+            <div className="flex items-center gap-4">
               <div className="icon">
                 <FaUserMd className="text-4xl text-orange-500" />
               </div>
               <div className="content p-4">
-                <p>{card.description}</p>
+                <p className="color-meddoc-dark">{card.description}</p>
               </div>
             </div>
           </div>
