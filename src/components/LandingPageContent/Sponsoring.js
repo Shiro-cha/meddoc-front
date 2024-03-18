@@ -16,7 +16,7 @@ import hackama from '../../assets/partenaires/Hack@ma.png';
 import gsps from '../../assets/partenaires/Logo GSPS.png';
 import miary from '../../assets/partenaires/miary.jpg';
 import poesam from '../../assets/partenaires/poesam.jpg';
-import sprint from '../../assets/partenaires/sprint.png ';
+import sprint from '../../assets/partenaires/sprint.png';
 
 export default function Sponsoring() {
   const image_slides = [

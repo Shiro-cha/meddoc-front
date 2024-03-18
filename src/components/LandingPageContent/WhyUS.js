@@ -51,7 +51,7 @@ export default function Whyus() {
                   {item.icon}
                 </div>
               </Link>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify" style={{height:"200px"}}>
+              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify flex items-center" style={{height:"200px",fontSize:25}}>
                 {item.description}
               </p>
             </div>
