@@ -37,7 +37,7 @@ export default function Whyus() {
   return (
     <section id="why-us" className="why-us flex flex-col items-center" style={{height:"90vh"}}>
     <h1 className="title-meddoc color-meddoc-dark mt-5">C'est simple, rapide et gratuit</h1>
-      <div className="grid grid-cols-2 gap-6 lg:grid-cols-4 lg:p-16 justify-center items-center">
+      <div className="grid grid-cols-2 gap-6 lg:grid-cols-4 lg:p-5 justify-center items-center">
         {items.map((item, index) => (
           (
             <div
