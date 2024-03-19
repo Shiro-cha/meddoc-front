@@ -49,7 +49,7 @@ export default function Sponsoring() {
         <div className="mx-auto" style={{width:520}}>
           {image_slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="flex justify-center items-center" style={{ height: '400px !important',width:620 }}> {/* Adjust height as needed */}
+              <div className="flex justify-center items-center mx-auto" style={{ height: '400px !important',width:620 }}> {/* Adjust height as needed */}
                 {slide.map((partner, partnerIndex) => (
                   <img
                     key={partnerIndex}

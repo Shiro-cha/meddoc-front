@@ -34,7 +34,7 @@ const AreUPro = () => {
         {cards.map((card) => (
           <div key={card.id} className="timeline-item">
             <div className="flex items-center gap-4 shadow p-4 rounded" style={{height:150,width:420}}>
-              <div className="icon p-10 rounded-full bg-orange-400">
+              <div className="icon p-4 rounded-full bg-orange-400">
                 <FaUserMd className="text-4xl text-white" />
               </div>
               <div className="content p-4">
