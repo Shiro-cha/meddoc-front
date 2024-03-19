@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 
-const BASE_URL = "http://127.0.0.1:8080"
-const BASE_URL_SEARCH = "http://192.168.3.216:9200"
+const BASE_URL = "http://16.16.212.56:8080"
+const BASE_URL_SEARCH = "http://16.16.212.56:9200"
 
 
 export const axiosSearch = axios.create({
