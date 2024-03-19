@@ -23,7 +23,7 @@ const Accordion = () => {
               <span className="mb-2 block text-lg font-semibold text-primary color-meddoc-orange">
                 FAQ
               </span>
-              <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px] color-meddoc-blue">
+              <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px] color-meddoc-dark">
               Questions fréquentes
               </h2>
               <p className="text-base text-body-color color-meddoc-dark opacity-50">
