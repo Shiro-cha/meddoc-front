@@ -126,8 +126,8 @@ export function Section() {
         <>
 
             {/* ================Hero section ========= */}
-            <section className="text-white py-auto max-w-screen flex justify-center items-center h-screen" id="hero">
-            <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12" style={{width:"100%",display:"flex",justifyContent:"center",alignItems:"center"}}>
+            <section className="text-white py-auto max-w-screen flex justify-center items-center" style={{height:"80vh"}} id="hero">
+            <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:grid-cols-12" style={{width:"100%",display:"flex",justifyContent:"center",alignItems:"center",height:"70vh !important"}}>
             <div class="m-auto place-self-center lg:col-span-7  flex flex-col justify-center items-center">
                 <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-5xl dark:text-white text-center">Prenez un rendez-vous chez votre <img src="https://readme-typing-svg.herokuapp.com?font=Roboto&weight=900&size=50&duration=2000&pause=1000&color=F39530&vCenter=true&random=false&width=435&lines=Med%C3%A9cin;Dentiste;Gyn%C3%A9cologue;Physioth%C3%A9rapeute;Cardiologue;Ost%C3%A9opathe;Dermatologue;Th%C3%A9rapeute" alt="Médecin" style={{display:"inline"}}/></h1>
                 <p class="max-w-2xl mb-6 font-light lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">A vos marques, prêt, santé !</p>

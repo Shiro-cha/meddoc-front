@@ -45,13 +45,14 @@ export default function Whyus() {
               className={`flex flex-col bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 ${
                 item.id % 2 === 0 ? "lg:mt-16" : ""
               }`}
+              style={{width:320}}
             >
-              <Link to={item.link} className="w-full meddoc-orange flex items-center justify-center opacity-80" style={{height:"150px"}}>
+              <Link to={item.link} className="w-full meddoc-blue flex items-center justify-center opacity-80" style={{height:"150px",}}>
                 <div className="w-16 h-16  rounded-full flex items-center justify-center">
                   {item.icon}
                 </div>
               </Link>
-              <p className="mb-3 p-4 font-normal text-gray-700 dark:text-gray-400 text-left flex items-center" style={{height:"200px",fontSize:20}}>
+              <p className="mb-3 p-4 font-normal text-gray-700 dark:text-gray-400 text-left flex items-center" style={{height:"150px",fontSize:20}}>
                 {item.description}
               </p>
             </div>
