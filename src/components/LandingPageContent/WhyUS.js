@@ -35,9 +35,9 @@ const items = [
 
 export default function Whyus() {
   return (
-    <section id="why-us" className="why-us flex flex-col justify-center" style={{height:"80vh"}}>
+    <section id="why-us" className="why-us mx-auto flex flex-col justify-center" style={{height:"80vh",width:"90%"}}>
     <h1 className="title-meddoc color-meddoc-dark mt-5">C'est simple, rapide et gratuit</h1>
-      <div className="grid grid-cols-2 gap-6 lg:grid-cols-4 lg:p-5 justify-center items-center">
+      <div className="grid grid-cols-2 gap-6 lg:grid-cols-4 lg:p-5 flex justify-center items-center">
         {items.map((item, index) => (
           (
             <div

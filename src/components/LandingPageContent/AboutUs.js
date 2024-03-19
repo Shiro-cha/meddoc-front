@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
           <p className="mb-3 p-4 font-normal text-gray-700 dark:text-gray-400 text-justify flex items-center">
             {privacyPolicyText}
           </p>
-          <Link to="/cug" className="btn text-white py-2 px-4 rounded-md meddoc-dark">
+          <Link to="/cug" className="btn text-white py-2 px-4 rounded-md meddoc-blue">
             Lire le CUG
           </Link>
         </div>

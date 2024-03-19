@@ -30,10 +30,10 @@ const AreUPro = () => {
       <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 dark:text-gray-200 mb-10  title-meddoc color-meddoc-dark">
         Êtes-vous un professionnel de santé ? 
       </h2>
-      <div className="grid grid-cols-2 gap-16 mt-10">
+      <div className="grid grid-cols-2 gap-16 mt-10 mx-auto">
         {cards.map((card) => (
           <div key={card.id} className="timeline-item">
-            <div className="flex items-center gap-4 shadow p-4 rounded" style={{height:150,width:400}}>
+            <div className="flex items-center gap-4 shadow p-4 rounded" style={{height:150,width:420}}>
               <div className="icon">
                 <FaUserMd className="text-4xl text-orange-500" />
               </div>
