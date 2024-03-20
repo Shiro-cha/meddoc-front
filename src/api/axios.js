@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const BASE_URL = "http://16.16.212.56:8080";
-const BASE_URL_SEARCH = "http://16.16.212.56:9200";
+const BASE_URL = "http://13.50.14.121:8080";
+const BASE_URL_SEARCH = "http://13.50.14.121:9200";
 
 const axiosInstances = {
   axiosSearch: axios.create({
