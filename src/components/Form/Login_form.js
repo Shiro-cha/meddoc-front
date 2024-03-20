@@ -107,7 +107,7 @@ export default function Login() {
                     <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                         <div class="p-6 space-y-2 md:space-y-6 sm:p-8">
 
-                            <h1 class="text-md font-bold leading-tight tracking-tight text-gray-900  dark:text-white color-meddoc-blue title-meddoc">
+                            <h1 class="text-md font-bold leading-tight tracking-tight text-gray-900  dark:text-white color-meddoc-dark title-meddoc">
                                 Se connecter à votre compte
                             </h1>
                             <p ref={errRef} className={errMsg ? "errmsg text-red-400 border border-red-300 block w-full p-2.5 rounded ring-red-300" : "offscreen"} aria-live="assertive">{errMsg}</p>

@@ -345,7 +345,7 @@ function Signup_form() {
       <div class="flex flex-col items-center justify-center px-40 py-8 mx-auto  lg:py-0">
         <div class="min-w-80  bg-white rounded-lg shadow dark:border  sm:max-w-xl xl:p-0 m-5 dark:bg-gray-800 dark:border-gray-700">
           <div class="p-6 space-y-4 md:space-y-6 sm:p-8 ">
-            <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white color-meddoc-blue title-meddoc">
+            <h1 class="text-md font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white color-meddoc-dark title-meddoc">
               Nouveau sur MeDdoc ?
             </h1>
             <div className="w-full " >
