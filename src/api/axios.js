@@ -18,7 +18,10 @@ const axiosInstances = {
     withCredentials: true,
   }),
 };
-export axiosInstances;
 
+// Export par défaut : axiosInstances
 export default axiosInstances;
+
+// Export des autres instances axios pour une utilisation spécifique si nécessaire
+export const { axiosSearch, axiosPublic, axiosPrivate } = axiosInstances;
 
