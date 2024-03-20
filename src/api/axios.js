@@ -18,6 +18,7 @@ const axiosInstances = {
     withCredentials: true,
   }),
 };
+export axiosInstances;
 
 export default axiosInstances;
 
