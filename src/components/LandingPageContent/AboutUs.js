@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
             Lire le CUG
           </Link>
         </div>
-      </div>
+      </div> 
       <div className="protection-image">
         {/* Add your larger data protection icon here */}
         <FaShieldAlt size={128} color="#082A4D" />
