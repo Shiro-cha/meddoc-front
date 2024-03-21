@@ -78,11 +78,11 @@ export default function ShowHealthcare() {
         <>
        
         <div className="flex flex-col justify-center  bg-slate-200 relative">
-                <div className="bg-white p-5 border border-gray-200 shadow-md transform hover:scale-105 transition duration-300 ease-in-out animated">
+                <div className="bg-white p-5 border border-gray-200 shadow-md ">
                 <div className="flex w-full justify-start container" style={{margin:"0 auto"}}>
                 {/* <img src={healthcare_profil?.image ? healthcare_profil?.image : }  alt="Photo de profil" className="w-36 h-36 object-cover rounded-full border border-gray-200 shadow dark:border-gray-700" /> */}
                 <img
-                                    className="w-36 h-36 object-cover rounded-full mb-2 transition duration-300 ease-in-out hover:scale-105"
+                                    className="w-36 h-36 object-cover rounded-full mb-2 "
                                     src={healthcare_profil?.image ? URL.createObjectURL(healthcare_profil?.image) : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}
                                     alt={healthcare_profil?.image ? 'Selected' : 'Default'}
                                 />
@@ -129,7 +129,7 @@ export default function ShowHealthcare() {
                                     href={`#${section.id}`}
                                     onClick={() => handleScroll(section.id)}
                                     className={`inline-block p-4 border-b-2 ${activeSection === section.id
-                                        ? "text-blue-600  active meddoc-blue"
+                                        ? "active meddoc-dark"
                                         : "border-transparent hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
                                     }`}
                                 >
