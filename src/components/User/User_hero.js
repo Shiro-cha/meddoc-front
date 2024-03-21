@@ -86,7 +86,7 @@ export default function UserHero(styles) {
             <section class="bg-white dark:bg-gray-900 p-4 sm:ml-64">
                 <div class="py-8 px-4 mx-auto  text-center lg:py-10 lg:px-12 flex flex-col justify-center">
 
-                    <h1 class="mb-4 text-2xl font-extrabold tracking-tight leading-none text-[#2d7d86] md:text-2xl lg:text-4xl dark:text-white color-meddoc-blue">BIENVENUE SUR MEDDOC</h1>
+                    <h1 class="mb-4 text-2xl font-extrabold tracking-tight leading-none text-[#2d7d86] md:text-2xl lg:text-4xl dark:text-white color-meddoc-dark">BIENVENUE SUR MEDDOC</h1>
                     <div className=" mx-auto my-5">
                         <form className="relative flex flex-col space-between " onSubmit={handleSearch}>
                             <div class="flex divide-x-[3px] min-w-full ">
