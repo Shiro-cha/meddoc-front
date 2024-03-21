@@ -653,7 +653,7 @@ export default function UserSetting() {
 
     <main className="p-6 sm:ml-64">
       <div >
-        <h1 className="font-bold text-2xl ml-5 color-meddoc-blue title-meddoc ">Paramètres de l'utilisateur:</h1>
+        <h1 className="font-bold text-2xl ml-5 color-meddoc-dark title-meddoc ">Paramètres de l'utilisateur:</h1>
       </div>
       <div className="flex flex-col  ">
 
