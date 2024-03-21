@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaLock } from "react-icons/fa";
+import { FaShieldAlt } from "react-icons/fa";
 
 const PrivacyPolicy = () => {
   const privacyPolicyText = (
@@ -11,21 +11,22 @@ const PrivacyPolicy = () => {
 
   return (
     <section id="privacy-policy" className="privacy-policy flex flex-col justify-center" style={{height:"80vh"}}>
-      <div className="container flex flex-col lg:flex-row items-center justify-center lg:space-x-8 py-8 lg:p-16">
-        <div className="flex items-center justify-center w-24 h-24 bg-orange-300 rounded-full">
-          <FaLock className="w-12 h-12 text-white" />
-        </div>
+      <div className="container shadow-lg flex bg-gray-100 flex-col lg:flex-row items-center justify-center lg:space-x-8 py-8 lg:p-16">
         <div className="text-center lg:text-left">
           <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 dark:text-gray-200 mb-4 color-meddoc-dark">
             Protection des données
           </h2>
-          <p className="mb-3 p-4 font-normal text-gray-700 dark:text-gray-400 text-justify flex items-center">
+          <p className="mb-3 p-4 font-normal text-gray-700 dark:text-gray-400 text-justify">
             {privacyPolicyText}
           </p>
           <Link to="/cug" className="btn text-white py-2 px-4 rounded-md meddoc-blue">
             Lire le CUG
           </Link>
         </div>
+      </div>
+      <div className="protection-image">
+        {/* Add your larger data protection icon here */}
+        <FaShieldAlt size={128} color="#082A4D" />
       </div>
     </section>
   );
