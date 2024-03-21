@@ -12,6 +12,10 @@ const PrivacyPolicy = () => {
   return (
     <section id="privacy-policy" className="privacy-policy flex flex-row justify-center" style={{height:"80vh"}}>
       <div className="container shadow-lg flex bg-gray-100 flex-col lg:flex-row items-center justify-center lg:space-x-8 py-8 lg:p-16">
+       <div className="protection-image">
+
+        <FaShieldAlt size={64} color="#082A4D" />
+      </div>
         <div className="text-center lg:text-left">
           <h2 className="text-2xl lg:text-3xl font-bold text-gray-800 dark:text-gray-200 mb-4 color-meddoc-dark">
             Protection des données
@@ -24,10 +28,7 @@ const PrivacyPolicy = () => {
           </Link>
         </div>
       </div> 
-      <div className="protection-image">
-        {/* Add your larger data protection icon here */}
-        <FaShieldAlt size={128} color="#082A4D" />
-      </div>
+     
     </section>
   );
 };
