@@ -745,7 +745,7 @@ export default function HealthcareAppointmentsSetting() {
                             className="space-y-2 md:space-y-6"
                             onSubmit={onSubmit}
                             noValidate >
-                            {daysListWeek.map((day, index) => (
+                            {daysListWeek.map((day, index) => ( 
 
                                 <div className='my-4'>
                                     <label class="relative inline-flex items-center cursor-pointer color-meddoc-dark" >
