@@ -853,8 +853,8 @@ export default function HealthcareCalendar() {
         <div className='sm:ml-64'>
 
             <div className='m-4 flex flex-col space-y-5'>
-                <h2 class="text-2xl font-bold text-gray-400 color-meddoc-blue">CALENDRIER:</h2>
-                < Link to={link_setting} className='inline-flex items-center hover:text-blue-600 color-meddoc-dark'>
+                <h2 class="text-2xl font-bold text-gray-400 color-meddoc-dark">CALENDRIER:</h2>
+                < Link to={link_setting} className='inline-flex items-center hover:text-orange-400 color-meddoc-dark'>
                     <img src={setting} alt='setting_svg' className='w-8 h-8 mr-2'></img>
                     Paramétrages
                 </Link>
@@ -866,7 +866,7 @@ export default function HealthcareCalendar() {
                     }}
                     style={{ cursor: 'pointer' }
                     }
-                    className='inline-flex items-center hover:text-blue-600 color-meddoc-dark'>
+                    className='inline-flex items-center hover:text-orange-400 color-meddoc-dark'>
                     <svg class="w-6 h-6 mr-2 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1v3m5-3v3m5-3v3M1 7h18M5 11h10M2 3h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" />
                     </svg>
