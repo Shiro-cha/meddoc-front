@@ -290,7 +290,7 @@ export default function HeaderConnected() {
 
     return (
         <>
-            <header className='sticky top-0 z-[100] color text'>
+            <header className='sticky top-0 z-[100] color text' style={{height:70}}>
                 {/* NAV BAR HORIZONTALE--------------------------------------------- */}
                 <nav className="bg-white sticky border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 z-[100] border min-h-[68px] ">
                     <div class="flex flex- justify-between items-center">
