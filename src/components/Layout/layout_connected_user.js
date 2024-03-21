@@ -13,7 +13,7 @@ function Layout() {
 
   return (
     <>
-      {userType === 'Patient' ? <HeaderConnected/> : <HeaderConnected  />}
+      {/**<HeaderConnected />**/}
          <Outlet/>
       {/* <Footer /> */}
     </>
