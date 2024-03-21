@@ -312,7 +312,7 @@ export default function HeaderConnected() {
 
                         {userType !== 'admin' && (
                             <div className="flex items-center ">
-                                <Notification />
+                                {/*<Notification />*/}
                             </div>
                         )}
 

@@ -13,7 +13,7 @@ function Layout() {
 
   return (
     <>
-      {/**<HeaderConnected />**/}
+      <HeaderConnected />
          <Outlet/>
       {/* <Footer /> */}
     </>
