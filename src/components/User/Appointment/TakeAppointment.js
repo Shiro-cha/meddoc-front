@@ -262,9 +262,9 @@ export default function TakeAppointment() {
         switch (currentStep) {
             case 1:
                 return (
-                    <div className="flex flex-col space-y-5 ">
+                    <div className="flex flex-col space-y-5 " style={{width:"80%",height:300}}>
                         <div class="max-w-sm w-80 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                            <div className="flex p-2 bg-blue-950 rounded-t-lg justify-between">
+                            <div className="flex p-2 rounded-t-lg justify-between meddoc-blue">
                                 <div className="flex text-white space-x-2">
                                     <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                                         <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1v3m5-3v3m5-3v3M1 7h18M5 11h10M2 3h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" />
