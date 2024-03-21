@@ -671,9 +671,9 @@ export default function HealthcareAppointmentsSetting() {
 
     return (
         <div className="sm:ml-64">
-        <div style={{width:"90%",height:"100%",margin:"0 auto"}} className="shadow-lg p-4">
+        <div style={{width:"90%",height:"100%",margin:"0 auto"}} className="shadow-lg p-4 rounded">
             <div className='m-4 flex-col'>
-                <h1 className='text-base font-semibold items-center color-meddoc-dark title-meddoc'>Parametres du temps de rendez-vous moyenne:</h1>
+                <h1 className='text-base font-semibold items-center color-meddoc-dark title-meddoc'>Parametres du temps de rendez-vous moyenne</h1>
                 <div className='my-2'>
                     <p ref={errRef} className={errMsg ? "errmsg text-red-400 border  border-red-300 block w-full p-2.5 mt-2 rounded ring-red-300" : "offscreen"} aria-live="assertive">{errMsg}</p>
                     <p className={successMsg ? "errmsg text-green-400 border  border-green-300 block w-full p-2.5 mt-2 rounded ring-green-300" : "offscreen"} aria-live="assertive">{successMsg}</p>
@@ -721,7 +721,7 @@ export default function HealthcareAppointmentsSetting() {
                 </form>
 
                 <hr className='border'></hr>
-                <h1 className='text-xl font-semibold items-center py-4 color-meddoc-dark title-meddoc'>Parametres hebdomadaire du rendez-vous:</h1>
+                <h1 className='text-xl font-semibold items-center py-4 color-meddoc-dark title-meddoc'>Parametres hebdomadaire du rendez-vous</h1>
 
                 <div class="flex items-center pl-4 w-auto rounded dark:border-gray-700">
 
