@@ -720,7 +720,7 @@ export default function HealthcareAppointmentsSetting() {
                 </form>
 
                 <hr className='border'></hr>
-                <h1 className='text-xl font-semibold items-center py-4 color-meddoc-blue title-meddoc'>Parametres hebdomadaire du rendez-vous:</h1>
+                <h1 className='text-xl font-semibold items-center py-4 color-meddoc-dark title-meddoc'>Parametres hebdomadaire du rendez-vous:</h1>
 
                 <div class="flex items-center pl-4 w-auto rounded dark:border-gray-700">
 
