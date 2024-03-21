@@ -670,7 +670,7 @@ export default function HealthcareAppointmentsSetting() {
 
 
     return (
-        <div className="sm:ml-64 container mx-auto shadow">
+        <div className="sm:ml-64 shadow-lg" style={{width:"80%", margin:"0 auto"}}>
             <div className='m-4 flex-col'>
                 <h1 className='text-base font-semibold items-center color-meddoc-dark title-meddoc'>Parametres du temps de rendez-vous moyenne:</h1>
                 <div className='my-2'>
