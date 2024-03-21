@@ -670,7 +670,8 @@ export default function HealthcareAppointmentsSetting() {
 
 
     return (
-        <div className="sm:ml-64 shadow-lg" style={{width:"80%", margin:"0 auto"}}>
+        <div className="sm:ml-64">
+        <div style={{width:"90%",height:"100%",margin:"0 auto"}} className="shadow">
             <div className='m-4 flex-col'>
                 <h1 className='text-base font-semibold items-center color-meddoc-dark title-meddoc'>Parametres du temps de rendez-vous moyenne:</h1>
                 <div className='my-2'>
@@ -830,6 +831,7 @@ export default function HealthcareAppointmentsSetting() {
                         </Scheduler>
                     </Paper>
                 </div>
+            </div>
             </div>
         </div>
     )
