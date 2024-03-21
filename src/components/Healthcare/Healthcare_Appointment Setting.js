@@ -692,7 +692,7 @@ export default function HealthcareAppointmentsSetting() {
                             name='average_time'
                             type='number'
                             min='15'
-                            className='mr-4 w-24 text-center'
+                            className='mr-4 w-24 text-center focus:ring-orange-300'
                             value={averageTime}
                             onChange={handeTimeAverage}></input>
                         <label className='ml-2'>
@@ -715,7 +715,7 @@ export default function HealthcareAppointmentsSetting() {
                             (pas obligatoire)
                         </label>
                     </div> */}
-                    <button type="submit" class="text-white bg-blue-600 my-4 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 meddoc-blue">Valider</button>
+                    <button type="submit" class="text-white bg-blue-600 my-4  focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2  focus:outline-none dark:focus:ring-blue-800 meddoc-blue">Valider</button>
 
                 </form>
 
